@@ -14,7 +14,7 @@ export const Header = styled.header`
   justify-content: space-between;
   gap: 12px;
   padding: 4px 0;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   border-bottom: 1px solid var(--accentColor);
 ${'' /* background:#ffb84d; */}
   > nav {

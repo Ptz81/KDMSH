@@ -10,7 +10,7 @@ import { Departments } from './components/Departments/Departments.jsx'
 import { DepartmentDetails } from './components/Departments/DepartmentDetails.jsx'
 import { Bands } from './components/Bands/Bands.jsx'
 import { BandDetails } from './components/Bands/BandDetails.jsx'
-import { Contacts } from './components/pages/Contacts.jsx'
+import { Contacts } from './components/pages/Contacts/Contacts.jsx'
 import { School } from './components/pages/School.jsx'
 
 function App() {

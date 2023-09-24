@@ -4,6 +4,9 @@ export const Image = styled.img`
  max-width: 100%;
  height: auto;
 `;
+export const Section = styled.section`
+margin-top: 200px;
+`
 
 export const ImageTitle = styled.img`
 width: 100%;
@@ -14,7 +17,6 @@ border-radius: 15px;
 `
 
 export const TitleComponent = styled.h2`
-margin-top: 100px;
 font-family: 'Marck Script', cursive;
 font-size: 100px;
 text-align: center;
@@ -25,6 +27,7 @@ text-align: center;
 // `;
 export const MainSection = styled.div`
 margin: auto;
+
 `;
 export const SectionComponent = styled.div`
 max-width: 800px;

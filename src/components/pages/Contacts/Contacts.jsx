@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
-import { MainSection } from "./Home.styled";
+import { Main, SectionComponent, SectionImg, Title } from "./Contacts.styled.js";
 
 export const Contacts = () => {
   return (
-    <MainSection>
-      <h1>Контактна інформація</h1>
-      <img src="https://via.placeholder.com/240x240" alt="" />
+    <Main>
+      <Title>Контактна інформація</Title>
+      <SectionComponent>
+        <>
+          <SectionImg src="https://via.placeholder.com/240x240" alt="map" />
+        </>
+         
       <address>
         <ul>
         <li>
@@ -27,7 +31,9 @@ export const Contacts = () => {
         </li>
       </ul>
       </address>
+      </SectionComponent>
+     
       
-    </MainSection>
+    </Main>
   );
 };
