@@ -18,16 +18,8 @@ font-family: 'Marck Script', cursive;
 
   color-scheme: light dark;
   color: #212121;
-/* background-image: linear-gradient(20deg,
-      hsl(100deg 71% 93%) 0%,
-      hsl(100deg 71% 96%) 33%,
-      hsl(99deg 71% 98%) 67%,
-      hsl(0deg 0% 100%) 100%); */
 height: 100%;
-      /* background: url(./assets/img/pexels-pixabay-210764.jpg) 0 0 no-repeat fixed; */
-      /* background-repeat: no-repeat;
-      background-size: 100% 100%; */
-         
+              
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

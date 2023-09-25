@@ -29,7 +29,7 @@ export const MainSection = styled.div`
 margin: auto;
 
 `;
-export const SectionComponent = styled.div`
+export const SectionComponent = styled.section`
 max-width: 800px;
 margin-left: 200px;
 margin-top:20px;
@@ -43,7 +43,7 @@ font-weight: bold;
 font-size: 24px;
 margin-bottom: 20px;
 `;
-export const MainText = styled.p`
+export const MainText = styled.article`
 color: var(--mainColor);
 display:flex;
 flex-direction:column;

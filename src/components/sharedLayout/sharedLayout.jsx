@@ -55,7 +55,7 @@ export const SharedLayout = () => {
         <IconContext.Provider value={{ color: "#f9f9f9", size: '1.5em', className: "global-class-name" }}>
         <span role="img" aria-label="music icon">
         <GiGClef/>
-            </span>{" "}  
+            </span>{""}  
           </IconContext.Provider>
  
             КДМШ №22

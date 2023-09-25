@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-
+export const StyledContaiber = styled.div`
+margin-right: 14px;
+`
 export const StyledMenuIcon = styled.img`
-  margin-left: 14px;
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -23,12 +24,12 @@ export const StyledMenuWrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 72px;
+  top: 85px;
   left: 0;
   width: 100vw;
   height: 100%;
   z-index: 999;
   overflow: hidden;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255);
 `;
