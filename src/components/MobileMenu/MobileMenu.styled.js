@@ -31,5 +31,5 @@ export const StyledMenuWrapper = styled.div`
   z-index: 999;
   overflow: hidden;
 
-  background-color: rgba(255, 255, 255);
+  background-color: #fff5ed;
 `;

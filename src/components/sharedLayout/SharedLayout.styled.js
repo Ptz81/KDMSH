@@ -17,7 +17,7 @@ export const Header = styled.header`
   padding: 4px 0;
   margin-bottom: 30px;
   border-bottom: 1px solid;
-  background:#e6e6e6;
+  /* background:#e6e6e6; */
   > nav {
     display: flex;
   }

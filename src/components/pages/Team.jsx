@@ -1,8 +1,11 @@
-import { MainText, SectionComponent } from "./Home.styled";
+import { MainText, MainTitle, SectionComponent } from "./Home.styled";
 
 export const Team = () => {
   return (
     <SectionComponent>
+      <MainTitle>
+        Викладацький склад
+      </MainTitle>
       <MainText>
         В школі творчо і натхненно працює понад 50 висококваліфікованих викладачів, які мають
         значний професійний досвід,гарантують індивідуальний підхід до кожного учня.

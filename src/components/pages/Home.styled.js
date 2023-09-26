@@ -32,7 +32,7 @@ margin: auto;
 export const SectionComponent = styled.section`
 max-width: 800px;
 margin-left: 200px;
-margin-top:20px;
+/* margin-top:20px; */
 font-size: 18px;
 line-height:150%;
 `;
@@ -43,10 +43,27 @@ font-weight: bold;
 font-size: 24px;
 margin-bottom: 20px;
 `;
-export const MainText = styled.article`
+export const MainText = styled.div`
 color: var(--mainColor);
 display:flex;
 flex-direction:column;
 font-size: 16px;
 margin-bottom: 20px;
 `;
+
+export const FormText = styled.div`
+margin-top: 40px;
+`
+export const FormList = styled.ul`
+margin-bottom: 20px;
+`
+
+export const FormItem = styled.li`
+list-style:square;
+margin-left: 30px;
+`
+export const CommentText = styled.p`
+color: var(--accentColor);
+font-size: 12px;
+line-height: 1.1;
+`

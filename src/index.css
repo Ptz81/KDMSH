@@ -28,13 +28,16 @@ height: 100%;
 }
 
 body {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.7) 0 100%),url(./assets/img/pexels-pixabay-210764.jpg) 0 0 no-repeat fixed;
+  background: linear-gradient(to right, #fff5ed 0 90%) fixed;
   margin: 0;
   min-width: 320px;
   height: 100%;
 }
 
-
+#root{
+background-image: url(./assets/img/pexels-pixabay-210764.jpg) 0 0 no-repeat;
+z-index: 999;
+}
 html,
 body,
 div,

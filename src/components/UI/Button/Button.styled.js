@@ -4,9 +4,10 @@ export const Button = styled.button`
 padding: 15px 25px;
  border: unset;
  border-radius: 15px;
- color: #212121;
+ color: white;
  z-index: 1;
- background: transparent;
+ background-color: var(--accentColor);
+
  backdrop-filter: blur(10px);
  ${'' /* border: 0.5px solid var(--subColor); */}
  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -17,11 +18,11 @@ padding: 15px 25px;
  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
  transition: all 250ms;
  overflow: hidden;
- margin-top: 20px;
+ /* margin-top: 20px; */
 
 &:hover {
 cursor: pointer;
-color: #e8e8e8;
+color: var(--accentColor);
 &:before{
 width: 100%;
 }
@@ -36,7 +37,8 @@ width: 100%;
  height: 100%;
  width: 0;
  border-radius: 15px;
- background-color: var(--accentColor);
+  background: #fff5ed;
+  color: var(--accentColor);
  z-index: -1;
  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);

@@ -2,9 +2,10 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-position: relative;
+/* position: relative;
 display: flex;
-flex-direction:column;
+flex-direction:column; */
+
 `
 
 export const AboutWrapper = styled.div`
@@ -23,7 +24,7 @@ color: #3b3937;
  display: flex;
  flex-direction: column;
  gap: 12px;
- margin-top: 20px;
+ margin-top: 50px;
 margin-bottom: 20px;
  ${'' /* > li{
      font-size: 50px;

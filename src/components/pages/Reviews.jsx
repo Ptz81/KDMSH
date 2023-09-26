@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MainText, MainTitle, SectionComponent } from "./Home.styled";
+import { CommentText, FormItem, FormList, FormText, MainText, MainTitle, SectionComponent } from "./Home.styled";
 import { Button, ButtonTitle } from "../UI/Button/Button.styled";
 
 export const Reviews = () => {
@@ -22,39 +22,38 @@ export const Reviews = () => {
         </MainText>
         <MainText>
           Заповнити форму рєстрації для вступу можна за посиланням:
-          <Link to='https://forms.gle/PVcbo8fZEWQrJm4G8' target="_blank">
+        </MainText>
+        <Link to='https://forms.gle/PVcbo8fZEWQrJm4G8' target="_blank">
             <Button>
               <ButtonTitle>Форма рєстрації</ButtonTitle>
-
           </Button>
           </Link>
-
-        </MainText>
       </div>
-      <div>
-        <h2>Перелік документів, які необхідні для вступу до школи:</h2>
-        <ul>
-          <li>
-            Копія ідентифікаційного коду (за наявності)
-          </li>
-          <li>
+      <FormText>
+        <MainTitle>Перелік документів, які необхідні для вступу до школи:</MainTitle>
+        <FormList>
+          <FormItem>
+             Заява
+          </FormItem>
+          <FormItem>
             Копія свідоцтва про народження
-          </li>
-          <li>
+          </FormItem>
+          <FormItem>
             Медична довідка.
-          </li>
-          <li>
-            Заява
-          </li>
-        </ul>
-        <p>
+          </FormItem>
+          <FormItem>
+         Копія ідентифікаційного коду (за наявності)
+          </FormItem>
+        </FormList>
+        <CommentText>
           * Заява встановленого зразка заповнюється на місці.
-          <p>
+        </CommentText>
+        <CommentText>
             Для здобувачів, що навчаються на пільговій основі, передбачен інший пакет документів.
-          </p>
+          </CommentText>
 
-        </p>
-      </div>
+        
+      </FormText>
     </SectionComponent>
   );
 };
