@@ -1,31 +1,34 @@
 import { AboutList, Link } from "./AboutElements.styled";
-
-export const AboutElements = () => {
+import {PropTypes} from 'prop-types';
+export const AboutElements = ({ onItemClick }) => {
   return (
     <AboutList>
             <li>
-        <button>
+        <button onClick={() => onItemClick('school')}>
           <Link to="school">Про школу</Link>
         </button>
           
         </li>
       <li>
-        <button>
+        <button onClick={() => onItemClick('mission')}>
           <Link to="mission">Мета</Link>
         </button>
           
         </li>
       <li>
-        <button>
+        <button onClick={() => onItemClick('team')}>
              <Link to="team">Колектив</Link>
         </button>
         </li>
       <li>
-        <button>
+        <button onClick={() => onItemClick('reviews')}>
           <Link to="reviews">Умови вступу</Link>
         </button>
         </li>
 </AboutList>
        
   );
+};
+AboutElements.propTypes = {
+   onItemClick: PropTypes.func.isRequired,
 };

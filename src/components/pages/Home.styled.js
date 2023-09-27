@@ -5,7 +5,8 @@ export const Image = styled.img`
  height: auto;
 `;
 export const Section = styled.section`
-margin-top: 200px;
+/* margin-top: 100px; */
+/* display: inline-flex; */
 `
 
 export const ImageTitle = styled.img`

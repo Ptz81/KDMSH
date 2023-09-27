@@ -32,7 +32,7 @@ export const SharedLayout = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 778) {
         setIsMobileMenuVisible(true);
       } else {
         setIsMobileMenuVisible(false);
@@ -52,7 +52,7 @@ export const SharedLayout = () => {
       <Header>
         <Logo>
        
-        <IconContext.Provider value={{ color: "#f9f9f9", size: '1.5em', className: "global-class-name" }}>
+        <IconContext.Provider value={{ color: "#ff4d4d", size: '1.5em', className: "global-class-name" }}>
         <span role="img" aria-label="music icon">
         <GiGClef/>
             </span>{""}  

@@ -24,7 +24,7 @@ color: #3b3937;
  display: flex;
  flex-direction: column;
  gap: 12px;
- margin-top: 50px;
+ /* margin-top: 50px; */
 margin-bottom: 20px;
  ${'' /* > li{
      font-size: 50px;
