@@ -1,6 +1,23 @@
 import { styled } from "styled-components";
 
 
+export const Title = styled.p`
+
+  color: var(--accentColor);
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+
+`;
+export const Description = styled.p`
+
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: var(--mainColor);
+
+`;
 export const Container = styled.div`
     display: block;
   position: relative;
@@ -37,33 +54,16 @@ export const Container = styled.div`
 &:hover:before {
   transform: scale(28);
 }
-&:hover <Description/>{
+&:hover .Description{
     transition: all 0.5s ease-out;
   color: rgba(255, 255, 255, 0.8);
 }
-&:hover <Title/>{
+&:hover .Title{
   transition: all 0.5s ease-out;
   color: var(--mainColor);
 }
 `;
 
-export const Title = styled.p`
-
-  color: var(--accentColor);
-  font-size: 1.5em;
-  line-height: normal;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-
-`;
-export const Description = styled.p`
-
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5em;
-  color: var(--mainColor);
-
-`;
 export const DecoWrapper = styled.div`
     display: flex;
   align-items: center;

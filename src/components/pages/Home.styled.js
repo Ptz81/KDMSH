@@ -21,14 +21,13 @@ export const TitleComponent = styled.h2`
 font-family: 'Lobster';
 font-size: 36px;
 margin-top: 20px;
-@media screen and (min-width: 768px) {
-    font-size: 52px;
+@media screen and (min-width: 778px) {
+    font-size: 38px;
+    color: var(--accentColor);
+    stroke: var(--mainColor);
   }
 `;
-// export const sectionContainer = styled.div`
-// max-width: 800px;
-// margin-left: 200px;
-// `;
+
 export const MainSection = styled.div`
 margin: auto;
 

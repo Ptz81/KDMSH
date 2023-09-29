@@ -13,9 +13,9 @@ export const Contacts = () => {
         </>
          
       <Address>
-        <ul>
+        <ul style={{width:'400px'}}>
         <li>
-          <AddressComponent>Адреса:</AddressComponent> вулиця Зодчих, 30а, Київ, 03194
+          <AddressComponent>Адреса:</AddressComponent> вулиця Зодчих, 30а, <br/>Київ, 03194
         </li>
           <li><AddressComponent>Телефон:</AddressComponent> 
             <Link to="tel:+380934139512" style={{textDecoration:"none", color:'#212121'}}>

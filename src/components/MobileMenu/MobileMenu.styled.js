@@ -13,7 +13,7 @@ export const StyledMenuIcon = styled.img`
     scale: calc(1.05);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 778px) {
     margin-left: 24px;
     width: 38px;
     height: 38px;

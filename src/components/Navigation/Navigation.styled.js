@@ -29,7 +29,8 @@ export const StyledNavLink = styled(NavLink)`
   transition: backgroundColor 0.5s ease-out;
 
   &:hover,   &:active  {
-    background-color: var(--subColor);
+    /* background-color: var(--subColor); */
     color: var(--accentColor);
+    font-weight: 600;
   }
 `;

@@ -15,7 +15,7 @@ export const Slide = styled.img`
   width: 100%;
   height: 100%;
   display: ${(props) => (props.active ? "block" : "none")};
-  object-fit: cover;
+  object-fit:cover;
 `;
 
 export const Arrow = styled.div`

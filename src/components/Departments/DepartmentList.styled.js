@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const CardWrapper = styled.ul`
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     
 `;
@@ -31,7 +31,7 @@ export const CardList = styled.li`
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 558px) {
             width: 230px;
         }
 
@@ -43,8 +43,8 @@ export const CardList = styled.li`
     border: 1px solid var(--border-header);
     width: 80%;
     border-radius: 15px;
-      marginLeft: auto;
-  marginRight: auto;
+      margin-left: auto;
+  margin-right: auto;
 ${'' /* 
     @media screen and (min-width:768px) and (max-width:1199px) {
         flex-grow: 1;
@@ -65,7 +65,7 @@ export const LinkCard = styled(NavLink)`
 
 export const DepartmentName = styled.p`
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     text-align: center;

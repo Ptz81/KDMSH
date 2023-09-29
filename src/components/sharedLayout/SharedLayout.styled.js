@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
   padding: 0;
   position:relative;
@@ -16,7 +16,7 @@ export const Header = styled.header`
   gap: 12px;
   padding: 4px 0;
   margin-bottom: 30px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--accentColor);
   /* background:#e6e6e6; */
   > nav {
     display: flex;
