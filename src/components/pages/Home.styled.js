@@ -5,8 +5,8 @@ export const Image = styled.img`
  height: auto;
 `;
 export const Section = styled.section`
-/* margin-top: 100px; */
-/* display: inline-flex; */
+margin-left: auto;
+margin-right: auto;
 `
 
 export const ImageTitle = styled.img`
@@ -18,9 +18,12 @@ border-radius: 15px;
 `
 
 export const TitleComponent = styled.h2`
-font-family: 'Marck Script', cursive;
-font-size: 100px;
-text-align: center;
+font-family: 'Lobster';
+font-size: 36px;
+margin-top: 20px;
+@media screen and (min-width: 768px) {
+    font-size: 52px;
+  }
 `;
 // export const sectionContainer = styled.div`
 // max-width: 800px;
