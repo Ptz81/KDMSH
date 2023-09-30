@@ -11,7 +11,7 @@ import { Link} from "react-router-dom";
 export const SocialFollow = () => {
     return (
         <SocialContainer >
-      <SocialTitle>Social Follow</SocialTitle>
+      <SocialTitle>Слідкуйте за нами у соцмережах</SocialTitle>
       <Link to="https://www.youtube.com/@user-ck5dw5yi1l/videos"
         className="youtube social" target = "_blank">
         <FontAwesomeIcon style={{ color: '#eb3223', marginRight: "20px"}} icon={faYoutube} size="2x" />

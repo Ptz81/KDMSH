@@ -7,11 +7,11 @@ export const Footer = styled.footer`
   border-top: 1px solid var(--accentColor);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   bottom: 0;
   left: 0;
   right: 0;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2px;
   height: auto;

@@ -10,8 +10,8 @@ export const AboutElements = ({ onItemClick }) => {
           
         </li>
       <li>
-        <button onClick={() => onItemClick('mission')}>
-          <Link to="mission">Мета</Link>
+        <button onClick={() => onItemClick('management')}>
+          <Link to="management">Керівництво</Link>
         </button>
           
         </li>
