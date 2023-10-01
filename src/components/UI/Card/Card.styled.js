@@ -4,7 +4,7 @@ export const ContainerCard = styled.div`
   position: relative;
   width: 350px;
   aspect-ratio: 16/9;
-  background-color: #f2f2f2;
+  background-color: var(--lightGrey);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@ export const Card = styled.div`
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: var(--lightGrey);
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -38,21 +38,22 @@ export const Card = styled.div`
 export const Content = styled.p`
  margin: 10px 0 10px;
   font-size: 12px;
-  color: #777;
+  color: var(--mainColor);
   line-height: 1.4;
 `
 export const CardTitle = styled.p`
   margin: 0;
   font-size: 20px;
-  color: #333;
+  color: var(--mainColor);
   font-weight: 700;
 `
 export const CardBtn = styled.button`
   padding: 15px;
   border-radius: 8px;
-  background: #777;
+  background: var(--accentColor);
   border: none;
   color: white;
+  cursor: pointer;
 `
 
 export const ImageCard = styled.img`
@@ -64,7 +65,7 @@ export const ImageCard = styled.img`
 
 export const CardIcon = styled.svg`
   width: 48px;
-  fill: #333;
+  fill: var(--mainColor);
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
   ${ContainerCard}:hover & {
