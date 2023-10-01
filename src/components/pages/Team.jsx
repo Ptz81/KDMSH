@@ -1,3 +1,4 @@
+import { Cards } from "../UI/Card/Card";
 import { MainText, MainTitle, SectionComponent } from "./Home.styled";
 
 export const Team = () => {
@@ -13,7 +14,8 @@ export const Team = () => {
         інтерпретації для забезпечення найкращих результатів навчання.
         Щорічно в школі навчаються 410 учнів з 5 до 18 років.
       </MainText>
-      <ul>
+      <Cards/>
+      {/* <ul>
         <li>
           <b>Директор</b> - Герасимчук Любов Василівна
         </li>
@@ -29,7 +31,7 @@ export const Team = () => {
         <li>
           <b>Engineering</b> - Gregor Ramadhani
         </li>
-      </ul>
+      </ul> */}
     </SectionComponent>
   );
 };

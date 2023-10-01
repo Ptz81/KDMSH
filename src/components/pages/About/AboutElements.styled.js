@@ -7,6 +7,10 @@ display: flex;
 flex-direction:column; */
 
 `
+export const AboutSection = styled.div`
+margin: auto;
+/* background-image: url('/public/img/bg.jpg'); */
+`;
 
 export const AboutWrapper = styled.div`
 ${'' /* position:absolute; */}

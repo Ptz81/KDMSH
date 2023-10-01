@@ -1,9 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { AboutElements } from "./AboutElements";
-import { AboutContainer } from "./AboutElements.styled";
-import { MainSection } from "../Home.styled";
-// import Slider from "../../UI/Slider/Slider";
-// import { useState } from "react";
+import { AboutContainer, AboutSection } from "./AboutElements.styled";
+
 
 export const About = () => {
   // const [isContentVisible, setIsContentVisible] = useState(false);
@@ -11,13 +9,13 @@ export const About = () => {
   //   setIsContentVisible(true);
   // };
   return (
-    <MainSection>
+    <AboutSection>
       <AboutContainer>
         {/* <AboutElements onItemClick={handleMenuItemClick} /> */}
         <AboutElements/>
       </AboutContainer>
        {/* {isContentVisible ? null : <Slider />} */}
       <Outlet />
-    </MainSection>
+    </AboutSection>
   );
 };
