@@ -1,9 +1,39 @@
 
 import { Card, CardBtn, CardIcon, CardTitle, ContainerCard, Content, ImageCard, Wrapper} from "./Card.styled";
 import {cardsData } from '../../data/CardData.json'
+import { useEffect, useState } from "react";
+import Modal from "../../Modal/Modal.jsx";
+import CardsModal from "../CardModal/CardsModal";
 // import PropTypes from "prop-types";
 
 export const Cards = () => {
+  const [isOpen, setIsOpen] = useState(false);
+const [selectedCardData, setSelectedCardData] = useState(null);
+
+  const handleToggle = (cardData) => {
+     setSelectedCardData(cardData);
+    setIsOpen(!isOpen);
+   };
+  
+   const handleClickOutside = (event) => {
+    if (Wrapper.current && !Wrapper.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+    if (event.key === "Escape" && isOpen) {
+      setIsOpen(false);
+    }
+  };
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isOpen]);
   return (
     <Wrapper>
       {cardsData.map((card, index) => (
@@ -21,10 +51,22 @@ export const Cards = () => {
           <Card>
             <CardTitle>{card.name}</CardTitle>
             <Content>{card.title}</Content>
-            <CardBtn>Детальніше</CardBtn>
+            <CardBtn onClick={() => handleToggle(card)}>Детальніше</CardBtn>
           </Card>
         </ContainerCard>
       ))}
+          {isOpen && selectedCardData && (
+        <Modal isOpen={isOpen} closeModal={() => setIsOpen(false)}>
+          <CardsModal
+            //  id={selectedCardData.id}
+            name={selectedCardData.name}
+            title={selectedCardData.title}
+            description={selectedCardData.description}
+            phone={selectedCardData.phone}
+            img={selectedCardData.url}
+          />
+        </Modal>
+      )}
     </Wrapper>
   );
 };
