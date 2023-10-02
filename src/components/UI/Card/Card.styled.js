@@ -1,21 +1,29 @@
 import styled from "styled-components"
 
+export const Wrapper = styled.div`
+display: flex;
+gap: 20px;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+`
 export const ContainerCard = styled.div`
   position: relative;
-  width: 350px;
+  width: 250px;
   aspect-ratio: 16/9;
-  background-color: var(--lightGrey);
+  background-color: var(--base);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  box-shadow: 0 0 0 5px #ffffff80;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 0 0 5px #ff4d4d20;
+  transition: all 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    &:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    /* transform: scale(1.05); */
+    /* box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); */
+    background-color: var(--base);
   }
 `
 export const Card = styled.div`
@@ -26,12 +34,13 @@ export const Card = styled.div`
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: var(--lightGrey);
+  background-color: var(--base);
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   ${ContainerCard}:hover & {
     transform: rotateX(0deg);
+    transform: scale(1.05);
   }
 `
 
@@ -57,7 +66,7 @@ export const CardBtn = styled.button`
 `
 
 export const ImageCard = styled.img`
-
+  object-fit: contain;
   width: 100%;
   height: 100%;
 
