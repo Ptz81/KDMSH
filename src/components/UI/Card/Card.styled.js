@@ -9,19 +9,17 @@ flex-wrap: wrap;
 `
 export const ContainerCard = styled.div`
   position: relative;
-  width: 250px;
+  /* width: 250px; */
   aspect-ratio: 16/9;
   background-color: var(--base);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 5px;
+  flex-grow: 1;
+  flex-basis: 250px;
   overflow: hidden;
-  perspective: 1000px;
   box-shadow: 0 0 0 5px #ff4d4d20;
   transition: all 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    &:hover {
-    /* transform: scale(1.05); */
+    transform: scale(1.03);
     /* box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); */
     background-color: var(--base);
   }
@@ -40,7 +38,7 @@ export const Card = styled.div`
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   ${ContainerCard}:hover & {
     transform: rotateX(0deg);
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
   }
 `
 

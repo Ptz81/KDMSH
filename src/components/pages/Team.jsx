@@ -1,7 +1,14 @@
 import { Cards } from "../UI/Card/Card";
 import { MainText, MainTitle, SectionComponent } from "./Home.styled";
-
+import {cardsData } from '../data/CardData.json'
+import { useState } from "react";
+// import CardsModal from "../UI/CardModal/CardsModal";
+import { Card } from "../UI/Card/Card.styled";
 export const Team = () => {
+  const [selectedCardData, setSelectedCardData] = useState(null);
+   const handleCardClick = (cardData) => {
+    setSelectedCardData(cardData);
+  };
   return (
     <SectionComponent>
       <MainTitle>
@@ -14,24 +21,19 @@ export const Team = () => {
         інтерпретації для забезпечення найкращих результатів навчання.
         Щорічно в школі навчаються 410 учнів з 5 до 18 років.
       </MainText>
-      <Cards/>
-      {/* <ul>
-        <li>
-          <b>Директор</b> - Герасимчук Любов Василівна
-        </li>
-        <li>
-          <b>Sales</b> - Darius Marianne
-        </li>
-        <li>
-          <b>Product</b> - Ségdae Jean-Pierre
-        </li>
-        <li>
-          <b>Marketing</b> - Melina Theotimos
-        </li>
-        <li>
-          <b>Engineering</b> - Gregor Ramadhani
-        </li>
-      </ul> */}
+      <Cards data={cardsData} onCardClick={handleCardClick} />
+       {selectedCardData && (
+        <Card
+          name={selectedCardData.name}
+          title={selectedCardData.title}
+          description={selectedCardData.description}
+          phone={selectedCardData.phone}
+          img={selectedCardData.url}
+          experience={selectedCardData.experience}
+          band={selectedCardData.band}
+          department={selectedCardData.department}
+        />
+      )}
     </SectionComponent>
   );
 };

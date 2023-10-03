@@ -1,18 +1,19 @@
 
 import { Card, CardBtn, CardIcon, CardTitle, ContainerCard, Content, ImageCard, Wrapper} from "./Card.styled";
-import {cardsData } from '../../data/CardData.json'
+// import {cardsData } from '../../data/CardData.json'
 import { useEffect, useState } from "react";
 import Modal from "../../Modal/Modal.jsx";
 import CardsModal from "../CardModal/CardsModal";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 
-export const Cards = () => {
+export const Cards = ({data,onCardClick}) => {
   const [isOpen, setIsOpen] = useState(false);
 const [selectedCardData, setSelectedCardData] = useState(null);
 
-  const handleToggle = (cardData) => {
+  const handleToggle = (cardData, ) => {
      setSelectedCardData(cardData);
-    setIsOpen(!isOpen);
+  setIsOpen(!isOpen);
+   onCardClick(cardData); 
    };
   
    const handleClickOutside = (event) => {
@@ -36,7 +37,7 @@ const [selectedCardData, setSelectedCardData] = useState(null);
   }, [isOpen]);
   return (
     <Wrapper>
-      {cardsData.map((card, index) => (
+      {data.map((card, index) => (
         <ContainerCard key={index}>
           {card.url ? (
             <ImageCard src={card.url} alt={`photo of ${card.name}`} />
@@ -64,6 +65,9 @@ const [selectedCardData, setSelectedCardData] = useState(null);
             description={selectedCardData.description}
             phone={selectedCardData.phone}
             img={selectedCardData.url}
+            experience={selectedCardData.experience}
+            band={selectedCardData.band}
+            department={selectedCardData.department}
           />
         </Modal>
       )}
@@ -71,3 +75,7 @@ const [selectedCardData, setSelectedCardData] = useState(null);
   );
 };
 
+Cards.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object),
+  onCardClick: PropTypes.func,
+}

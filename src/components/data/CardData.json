@@ -1,45 +1,60 @@
 {
   "cardsData": [
     {
-      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
-      "name": "Любов Герасимчук",
-      "title": "Директор",
-      "phone": "+380000000",
+      "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
+      "name": "Соломія Гуль",
+      "title": "Викладач",
+      "experience": "2021",
+      "band":"Оркестр народної музики 'Барвисті Візерунки'",
+      "department":"скрипка",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur"
+    },
+    {
+      "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
+      "name": "Соломія Гуль",
+      "title": "Викладач",
+      "experience": "2021",
+      "band":"Оркестр народної музики 'Барвисті Візерунки'",
+      "department":"скрипка",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur"
+    },
+    {
+      "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
+      "name": "Соломія Гуль",
+      "title": "Викладач",
+      "experience": "2021",
+      "band":"Оркестр народної музики 'Барвисті Візерунки'",
+      "department":"скрипка",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur"
+    },
+    {
+      "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
+      "name": "Соломія Гуль",
+      "title": "Викладач",
+      "experience": "2021",
+      "band":"Оркестр народної музики 'Барвисті Візерунки'",
+      "department":"скрипка",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur"
+    },
+    {
+      "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
+      "name": "Соломія Гуль",
+      "title": "Викладач",
+      "experience": "2021",
+      "band":"Оркестр народної музики 'Барвисті Візерунки'",
+      "department":"скрипка",
+      "phone": "+380934139512",
       "description":"Lorem ipsum dolor sit amet, consectetur"
     },
     {
       "url": "https://i.ibb.co/DQbdMGm/image.jpg",
       "name": "Любов Герасимчук",
       "title": "Директор",
-      "phone": "+380000000",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
-    },
-    {
-      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
-      "name": "Любов Герасимчук",
-      "title": "Директор",
-      "phone": "+380000000",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
-    },
-    {
-      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
-      "name": "Любов Герасимчук",
-      "title": "Директор",
-      "phone": "+380000000",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
-    },
-    {
-      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
-      "name": "Любов Герасимчук",
-      "title": "Директор",
-      "phone": "+380000000",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
-    },
-    {
-      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
-      "name": "Любов Герасимчук",
-      "title": "Директор",
-      "phone": "+380000000",
+      "phone": "+380934139512",
       "description":"Lorem ipsum dolor sit amet, consectetur"
     }
   ]

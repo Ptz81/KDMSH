@@ -1,22 +1,6 @@
 import PropTypes from "prop-types";
 
-import {
-//   Wrapper,
-//   Img,
-//   Info,
-//   Title,
-//   Description,
-//   Text,
-//   ButtonSee,
-//   CardWrapper,
-//   About,
-//   Box,
-//   Functionality,
-//   SubTitle,
-//   SecondTitle,
-//   Conditions,
-//   ConditionsType,
-} from "./CardsModal.styled.js";
+import { CardWrapper, Experience, TextSpan } from "./CardsModal.styled.js";
 import { Wrapper } from "./CardsModal.styled.js";
 import { ContainerCard } from "./CardsModal.styled.js";
 import { Image } from "./CardsModal.styled.js";
@@ -26,14 +10,17 @@ import { Name } from "./CardsModal.styled.js";
 import { Title } from "./CardsModal.styled.js";
 import { About } from "./CardsModal.styled.js";
 import { Text } from "./CardsModal.styled.js";
-import { Button } from "./CardsModal.styled.js";
+// import { Button } from "./CardsModal.styled.js";
+import { Button, ButtonTitle } from "../Button/Button.styled.js";
+import { Link } from "react-router-dom";
+// import { ButtonTitle } from "../../pages/Home.styled.js/ButtonTitle.jsx";
 
-const CardsModal = ({name, title, img, description, phone }) => {
- 
-  
-   const handlePhoneCall = () => {
-    window.location.href = `tel:${phone}`;
-  };
+const CardsModal = ({name, title, img, description, experience, band, department }) => {
+    // const handlePhoneCall = () => {
+    // window.location.href = `tel:${phone}`;
+    // };
+  const currentYear = new Date().getFullYear();
+   const yearsOfExperience = currentYear - experience;
   return (
     <Wrapper>
       <ContainerCard>
@@ -49,13 +36,21 @@ const CardsModal = ({name, title, img, description, phone }) => {
           )}
       </ContainerCard>
       <Info>
-        <Name>{name}
-          <Title>{title},</Title>
-        </Name>
-      </Info>
+        <Name>{name}</Name>
+        <Title>{title}</Title>
           <About>{description}</About>
-          <Text>{phone}</Text>
-      <Button onClick={handlePhoneCall}>Подзвонити</Button>
+          <Text><TextSpan>Викладач по класу:</TextSpan>{department}</Text>
+        <Experience><TextSpan>Стаж:</TextSpan>{ yearsOfExperience}р.</Experience>
+        <Text><TextSpan>Колективи:</TextSpan>{band}</Text>
+        <CardWrapper>
+           <Link to='https://forms.gle/PVcbo8fZEWQrJm4G8' target="_blank">
+            <Button>
+              <ButtonTitle>Записатися</ButtonTitle>
+          </Button>
+          </Link>
+        </CardWrapper>
+         
+      </Info>
     </Wrapper>
   );
 };
@@ -66,7 +61,10 @@ CardsModal.propTypes = {
   id: PropTypes.number, 
   name: PropTypes.string,
   title: PropTypes.string,
-  phone: PropTypes.number,
+  phone: PropTypes.string,
   img: PropTypes.string,
   description: PropTypes.string,
+  experience: PropTypes.number,
+  band: PropTypes.string,
+  department: PropTypes.string,
 };

@@ -17,15 +17,48 @@ border-radius: 15px;
  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
 `
 
-export const TitleComponent = styled.h2`
-font-family: 'Lobster';
+export const TitleComponent = styled.div`
+/* font-family: 'Marck-script', sans-serif;
 font-size: 36px;
 margin-top: 20px;
 @media screen and (min-width: 778px) {
     font-size: 38px;
     color: var(--accentColor);
     stroke: var(--mainColor);
+  } */
+margin-top: 30px;
+
+svg {
+	/* font-family: "Marck Script", sans-serif; */
+ 
+	width: 100%; height: 100%;
+}
+svg text {
+
+	animation: stroke 5s infinite alternate;
+  animation-delay: 3s;
+	stroke-width: 2;
+	stroke: #FF4D4D;
+  fill: #fff5ed;
+  font-family: 'Marck Script';
+	font-size: 5vw;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+      font-size: 66px; 
   }
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(255,77,77,0); stroke: rgba(255,77,77,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(255,77,77,0); stroke: rgba(255,77,77,1); }
+	80%  {fill: rgba(255,77,77,0); stroke: rgba(255,77,77,1); stroke-width: 3; }
+	100% {
+		fill: rgba(255,77,77,1); stroke: rgba(255,77,77,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
 `;
 
 export const MainSection = styled.div`
@@ -33,7 +66,7 @@ margin: auto;
 
 `;
 export const SectionComponent = styled.section`
-max-width: 800px;
+max-width: 1200px;
 margin-left: 200px;
 /* margin-top:20px; */
 font-size: 18px;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 export const CarouselWrapper = styled.div`
   position: relative;
@@ -32,7 +32,7 @@ export const LeftArrow = styled(Arrow)`
 `;
 
 export const RightArrow = styled(Arrow)`
-  right: 1rem;
+  right: 0rem;
 `;
 
 export const Indicators = styled.div`

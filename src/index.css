@@ -3,11 +3,13 @@
 @font-face {
     font-family: 'Montserrat', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+  font-family: 'Marck Script', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
   }
-    @font-face {
+    /* @font-face {
 font-family: 'Marck Script', cursive;
       src: url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
-    }
+    } */
     --mainColor: #212121;
     --accentColor: #ff4d4d;
     --subColor: grey;
