@@ -1,14 +1,14 @@
-import { Cards } from "../UI/Card/Card";
+// import { Cards } from "../UI/Card/Card";
 import { MainText, MainTitle, SectionComponent } from "./Home.styled";
-import {cardsData } from '../data/CardData.json'
-import { useState } from "react";
-// import CardsModal from "../UI/CardModal/CardsModal";
-import { Card } from "../UI/Card/Card.styled";
+// import {cardsData } from '../data/CardData.json'
+// import { useState } from "react";
+// import { Card } from "../UI/Card/Card.styled";
+import { Cards as TeamCards } from "../UI/Card/Card.jsx";
 export const Team = () => {
-  const [selectedCardData, setSelectedCardData] = useState(null);
-   const handleCardClick = (cardData) => {
-    setSelectedCardData(cardData);
-  };
+  // const [selectedCardData, setSelectedCardData] = useState(null);
+  //  const handleCardClick = (cardData) => {
+  //   setSelectedCardData(cardData);
+  // };
   return (
     <SectionComponent>
       <MainTitle>
@@ -21,8 +21,9 @@ export const Team = () => {
         інтерпретації для забезпечення найкращих результатів навчання.
         Щорічно в школі навчаються 410 учнів з 5 до 18 років.
       </MainText>
-      <Cards data={cardsData} onCardClick={handleCardClick} />
-       {selectedCardData && (
+      {/* <TeamCards data={cardsData} onCardClick={handleCardClick} /> */}
+      <TeamCards/>
+       {/* {selectedCardData && (
         <Card
           name={selectedCardData.name}
           title={selectedCardData.title}
@@ -33,7 +34,7 @@ export const Team = () => {
           band={selectedCardData.band}
           department={selectedCardData.department}
         />
-      )}
+      )} */}
     </SectionComponent>
   );
 };

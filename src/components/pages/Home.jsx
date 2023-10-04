@@ -10,7 +10,6 @@ export const Home = () => {
 
       <Carousel data={slides}/>
         <TitleComponent>
-          {/* Жити без музики — це, як дихати без повітря! */}
           <svg><text x="2%" y="50%" dy=".15em">Ласкаво просимо у світ музики!</text></svg>
         </TitleComponent>
      

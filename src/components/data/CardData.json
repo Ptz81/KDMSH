@@ -8,7 +8,8 @@
       "band":"Оркестр народної музики 'Барвисті Візерунки'",
       "department":"скрипка",
       "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Team"
     },
     {
       "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
@@ -18,7 +19,8 @@
       "band":"Оркестр народної музики 'Барвисті Візерунки'",
       "department":"скрипка",
       "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Team"
     },
     {
       "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
@@ -28,7 +30,8 @@
       "band":"Оркестр народної музики 'Барвисті Візерунки'",
       "department":"скрипка",
       "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+    "section": "Team"
     },
     {
       "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
@@ -38,7 +41,8 @@
       "band":"Оркестр народної музики 'Барвисті Візерунки'",
       "department":"скрипка",
       "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Team"
     },
     {
       "url": "https://i.ibb.co/hfh7Nnx/pic3.jpg",
@@ -48,14 +52,42 @@
       "band":"Оркестр народної музики 'Барвисті Візерунки'",
       "department":"скрипка",
       "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Team"
+    },
+    {
+      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
+      "name": "Любов Герасимчук",
+      "title": "Директор",
+      "experience": "1972",
+      "department":"фортепіано",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Management"
     },
     {
       "url": "https://i.ibb.co/DQbdMGm/image.jpg",
       "name": "Любов Герасимчук",
       "title": "Директор",
       "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur"
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Management"
+    },
+    {
+      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
+      "name": "Любов Герасимчук",
+      "title": "Директор",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Management"
+    },
+    {
+      "url": "https://i.ibb.co/DQbdMGm/image.jpg",
+      "name": "Любов Герасимчук",
+      "title": "Директор",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Management"
     }
   ]
 }

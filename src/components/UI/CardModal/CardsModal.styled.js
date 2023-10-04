@@ -1,20 +1,22 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-
+font-size: inherit;
 `
 export const ContainerCard= styled.div`
 width: 100%;
 margin-bottom: 30px;
+border-radius: 20px;
 `
 export const Image = styled.img`
-object-fit: contain;
+object-fit: cover;
 width: 100%;
-min-height: 500px;
+height: 500px;
 border-radius: 20px;
 `
 export const CardWrapper = styled.div`
 text-align: center;
+
 `
 export const CardIcon = styled.svg`
   width: 48px;
@@ -41,14 +43,22 @@ margin-bottom: 15px;
 export const Title = styled.p`
 text-transform: uppercase;
 font-size: 4vw;
-color: var(--accentColor);
+/* color: var(--accentColor); */
 padding-bottom: 10px;
 margin-bottom: 10px;
 border-bottom: 1px solid var(--accentColor);
+
 @media screen and (min-width: 487px) {
-      font-size: 24px; 
+      font-size: 24px;
   }
 `
+
+export const TitleSpan = styled.span`
+margin-left: 10px;
+color: var(--accentColor);
+
+`
+
 export const About = styled.p`
 
 `

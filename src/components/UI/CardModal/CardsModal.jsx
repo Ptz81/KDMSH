@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { CardWrapper, Experience, TextSpan } from "./CardsModal.styled.js";
+import { CardWrapper, Experience, TextSpan, TitleSpan } from "./CardsModal.styled.js";
 import { Wrapper } from "./CardsModal.styled.js";
 import { ContainerCard } from "./CardsModal.styled.js";
 import { Image } from "./CardsModal.styled.js";
@@ -10,10 +10,9 @@ import { Name } from "./CardsModal.styled.js";
 import { Title } from "./CardsModal.styled.js";
 import { About } from "./CardsModal.styled.js";
 import { Text } from "./CardsModal.styled.js";
-// import { Button } from "./CardsModal.styled.js";
 import { Button, ButtonTitle } from "../Button/Button.styled.js";
 import { Link } from "react-router-dom";
-// import { ButtonTitle } from "../../pages/Home.styled.js/ButtonTitle.jsx";
+
 
 const CardsModal = ({name, title, img, description, experience, band, department }) => {
     // const handlePhoneCall = () => {
@@ -37,9 +36,8 @@ const CardsModal = ({name, title, img, description, experience, band, department
       </ContainerCard>
       <Info>
         <Name>{name}</Name>
-        <Title>{title}</Title>
-          <About>{description}</About>
-          <Text><TextSpan>Викладач по класу:</TextSpan>{department}</Text>
+        <Title>{title}:<TitleSpan>{department}</TitleSpan></Title>
+        <About>{description}</About>
         <Experience><TextSpan>Стаж:</TextSpan>{ yearsOfExperience}р.</Experience>
         <Text><TextSpan>Колективи:</TextSpan>{band}</Text>
         <CardWrapper>
@@ -64,7 +62,7 @@ CardsModal.propTypes = {
   phone: PropTypes.string,
   img: PropTypes.string,
   description: PropTypes.string,
-  experience: PropTypes.number,
+  experience: PropTypes.string,
   band: PropTypes.string,
   department: PropTypes.string,
 };

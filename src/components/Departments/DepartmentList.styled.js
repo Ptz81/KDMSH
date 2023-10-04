@@ -3,10 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
-   padding: 0px 15px;
-    ${'' /* marginRight: auto;
-    marginLeft: auto; */}
-    width:100%;
+     width:100%;
     margin-bottom: 100px;
     
 `;
@@ -16,7 +13,8 @@ export const CardWrapper = styled.ul`
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 export const CardList = styled.li`

@@ -24,6 +24,7 @@ export const ContainerCard = styled.div`
     background-color: var(--base);
   }
 `
+
 export const Card = styled.div`
   position: absolute;
   top: 0;

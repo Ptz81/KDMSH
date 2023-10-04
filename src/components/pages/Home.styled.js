@@ -18,19 +18,9 @@ border-radius: 15px;
 `
 
 export const TitleComponent = styled.div`
-/* font-family: 'Marck-script', sans-serif;
-font-size: 36px;
 margin-top: 20px;
-@media screen and (min-width: 778px) {
-    font-size: 38px;
-    color: var(--accentColor);
-    stroke: var(--mainColor);
-  } */
-margin-top: 30px;
 
 svg {
-	/* font-family: "Marck Script", sans-serif; */
- 
 	width: 100%; height: 100%;
 }
 svg text {
