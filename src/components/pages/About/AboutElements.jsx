@@ -21,7 +21,7 @@ import { AboutList, Link } from "./AboutElements.styled";
       <li>
         <button>
           {/* <button onClick={() => onItemClick('team')}></button> */}
-             <Link to="team">Колектив</Link>
+             <Link to="team/1">Колектив</Link>
         </button>
         </li>
       <li>

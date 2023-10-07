@@ -1,4 +1,5 @@
-import styled from "styled-components"
+// import styled from "@emotion/react";
+import styled from '@emotion/styled';
 
 export const Wrapper = styled.div`
 display: flex;
@@ -7,7 +8,7 @@ justify-content: space-between;
 align-items: center;
 flex-wrap: wrap;
 `
-export const ContainerCard = styled.div`
+export const ContainerCard = styled.li`
   position: relative;
   /* width: 250px; */
   aspect-ratio: 16/9;

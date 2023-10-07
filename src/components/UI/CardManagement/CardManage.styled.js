@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const CardDescription = styled.div`
  display: flex;
   position: absolute;
