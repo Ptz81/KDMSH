@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Container, Header, Logo, Link, StyledHeader } from "./SharedLayout.styled.js";
+import { Container, Header, Logo, Link, StyledHeader, LogoLink } from "./SharedLayout.styled.js";
 import { GiGClef } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import { FooterPage } from "../pages/Footer/Footer.jsx";
@@ -50,17 +50,16 @@ export const SharedLayout = () => {
   return (
     <Container>
       <Header>
+        <LogoLink to="/" end>
         <Logo>
-       
         <IconContext.Provider value={{ color: "#ff4d4d", size: '1.5em', className: "global-class-name" }}>
         <span role="img" aria-label="music icon">
         <GiGClef/>
             </span>{""}  
           </IconContext.Provider>
- 
             КДМШ №22
-    
-        </Logo>
+          </Logo>
+        </LogoLink>
         {isMobileMenuVisible ? (
         <>
           <MenuForMobile/>

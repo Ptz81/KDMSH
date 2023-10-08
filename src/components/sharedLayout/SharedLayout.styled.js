@@ -34,7 +34,10 @@ align-items: center;
   color: var(--accentColor);
 }
 `;
-
+export const LogoLink = styled(NavLink)`
+ text-decoration: none;
+ color: inherit;
+`
 export const Link = styled(NavLink)`
   padding: 5px 10px;
   border-radius: 4px;

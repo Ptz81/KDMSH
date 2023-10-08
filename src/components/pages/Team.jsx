@@ -1,5 +1,5 @@
 import { MainText, MainTitle, SectionComponent } from "./Home.styled";
-import { cardsData } from '../data/CardData.json';
+import {cardsData} from '../data/CardData.json';
 import { useEffect, useState } from "react";
 import CardList from "../Pagination/CardList";
 
