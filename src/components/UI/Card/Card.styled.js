@@ -14,8 +14,10 @@ export const ContainerCard = styled.li`
   aspect-ratio: 16/9;
   background-color: var(--base);
   border-radius: 5px;
+    /* max-width: 250px; */
   flex-grow: 1;
   flex-basis: 250px;
+  /* max-width: 250px; */
   overflow: hidden;
   box-shadow: 0 0 0 5px #ff4d4d20;
   transition: all 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);

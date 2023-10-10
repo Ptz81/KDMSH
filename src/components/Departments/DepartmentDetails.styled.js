@@ -19,6 +19,9 @@ export const Description = styled.p`
 
 `;
 export const Container = styled.div`
+
+`
+export const WrapperDepart = styled.div`
     display: block;
   position: relative;
   max-width: auto;
