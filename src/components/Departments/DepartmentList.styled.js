@@ -52,6 +52,8 @@ ${'' /*
 
 export const LinkCard = styled(NavLink)`
     display: block;
+    max-width: 250px;
+    height: 200px;
     text-decoration: none;
     color: currentColor;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
