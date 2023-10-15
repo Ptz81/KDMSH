@@ -1,7 +1,7 @@
 // import { Link } from "react-router-dom";
-import { Container, CardWrapper, DepartmentName, CardList, LinkCard} from "../Departments/DepartmentList.styled";
+import { Container, CardWrapper, DepartmentName, CardList, LinkCard, ImageTitle} from "../Departments/DepartmentList.styled";
 import PropTypes from "prop-types";
-// import { Image } from "../pages/Home.styled";
+
 
 export const BandList = ({ bands }) => {
   return (
@@ -21,7 +21,7 @@ export const BandList = ({ bands }) => {
         
         <CardList key={band.id}>
           <LinkCard to={`${band.id}`}>
-            <img src={band.photo} alt={band.name} />
+            <ImageTitle src={band.photo} alt={band.name} />
             <DepartmentName> 
               {band.name}
             </DepartmentName>

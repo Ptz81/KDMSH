@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-export const StyledNav = styled.nav`
+export const LiItem = styled.li`
+list-style: none;
+`
+
+export const StyledNav = styled.ul`
   display: flex;
   align-items: center;
   flex-direction: column;

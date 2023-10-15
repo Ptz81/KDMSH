@@ -22,7 +22,15 @@ export const Header = styled.header`
     display: flex;
   }
 `;
-
+export const LogoSpan = styled.span`
+margin-left: 10px;
+font-family: 'Marck Script', cursive;
+line-height: 1.5em;
+color: var(--semiAccentColor);
+&:hover{
+  color: var(--accentColor);
+}
+`
 export const Logo = styled.p`
   font-weight: 700;
   margin: 0;

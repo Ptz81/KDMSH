@@ -17,14 +17,54 @@ export const getDepartmentById = (departmentId) => {
 };
 
 const bands = [
-  { id: "q-1", name: "Оркестр народної музики 'Барвисті Візерунки'", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' },
-  { id: "q-2", name: "Фортепіанний дует 'Но-Та'", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' },
-  { id: "q-3", name: "Дитячий хор", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' },
-  { id: "q-4", name: "Ансамбль скрипалів", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' },
-  { id: "q-5", name: "Ансамбль флейтистів", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' },
-  { id: "q-6", name: "Вокальний дует", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' },
-  { id: "q-7", name: "Фольклорний ансамбль", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' },
-  { id: "q-8", name: "Ансамбль гітаристів", photo:'./src/assets/img/pexels-dmitry-demidov-3783471.jpg' }
+  {
+    id: "q-1",
+    name: "Оркестр народної музики 'Барвисті Візерунки'",
+    photo: 'https://i.ibb.co/3CJPfYt/orhestra.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    id: "q-2",
+    name: "Фортепіанний дует 'Но-Та'",
+    photo: 'https://i.ibb.co/Khng8mg/Nota.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    id: "q-3",
+    name: "Дитячий хор",
+    photo: './src/assets/img/pexels-dmitry-demidov-3783471.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    id: "q-4",
+    name: "Ансамбль скрипалів",
+    photo: './src/assets/img/pexels-dmitry-demidov-3783471.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    id: "q-5",
+    name: "Ансамбль флейтистів",
+    photo: 'https://i.ibb.co/g46hpBN/Tamara.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    id: "q-6",
+    name: "Вокальний дует",
+    photo: './src/assets/img/pexels-dmitry-demidov-3783471.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    id: "q-7",
+    name: "Фольклорний ансамбль",
+    photo: './src/assets/img/pexels-dmitry-demidov-3783471.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  },
+  {
+    id: "q-8",
+    name: "Ансамбль гітаристів",
+    photo: 'https://i.ibb.co/PNQPh2b/pic2.jpg',
+    about: "lorem ipsum dolor sit amet, consectetur"
+  }
 ];
 
 export const getBands = () => {

@@ -4,20 +4,19 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
 display: flex;
 gap: 20px;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 `
 export const ContainerCard = styled.li`
   position: relative;
-  /* width: 250px; */
+  /* max-width: 250px; */
   aspect-ratio: 16/9;
   background-color: var(--base);
   border-radius: 5px;
-    /* max-width: 250px; */
+  max-width: 250px;
   flex-grow: 1;
   flex-basis: 250px;
-  /* max-width: 250px; */
   overflow: hidden;
   box-shadow: 0 0 0 5px #ff4d4d20;
   transition: all 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);

@@ -1,17 +1,18 @@
 import { Outlet } from "react-router-dom";
-import { Container, Header, Logo, Link, StyledHeader, LogoLink } from "./SharedLayout.styled.js";
-import { GiGClef } from "react-icons/gi";
-import { IconContext } from "react-icons";
+import { Container, Header, Logo, Link, StyledHeader, LogoLink, LogoSpan } from "./SharedLayout.styled.js";
+// import { GiGClef } from "react-icons/gi";
+// import { IconContext } from "react-icons";
 import { FooterPage } from "../pages/Footer/Footer.jsx";
 import { useEffect, useState } from "react";
 import MenuForMobile from "../MobileMenu/MobileMenu.jsx";
+import logo from '../Images/logo.svg';
 // import { MainSection } from "../pages/Home.styled.js";
 // import { SubmenuItem } from "./Submenu.jsx";
 // import {MobileMenu} from '../MobileMenu/MobileMenu.jsx'
 
 export const SharedLayout = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
-
+  const iconLogo = logo;
    useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -52,12 +53,13 @@ export const SharedLayout = () => {
       <Header>
         <LogoLink to="/" end>
         <Logo>
-        <IconContext.Provider value={{ color: "#ff4d4d", size: '1.5em', className: "global-class-name" }}>
+        {/* <IconContext.Provider value={{ color: "#ff4d4d", size: '1.5em', className: "global-class-name" }}>
         <span role="img" aria-label="music icon">
         <GiGClef/>
             </span>{""}  
-          </IconContext.Provider>
-            КДМШ №22
+          </IconContext.Provider> */}
+            <img src={iconLogo} />
+            <LogoSpan>КДМШ №22</LogoSpan>
           </Logo>
         </LogoLink>
         {isMobileMenuVisible ? (

@@ -37,9 +37,9 @@ export const CardList = styled.li`
     text-decoration: none;
   }
   > a img {
-    margin: 10px;
+    margin-top: 10px;
     border: 1px solid var(--border-header);
-    width: 80%;
+    width: 90%;
     border-radius: 15px;
       margin-left: auto;
   margin-right: auto;
@@ -49,6 +49,14 @@ ${'' /*
     } */}
   }
 `;
+
+export const ImageTitle = styled.img`
+width: 100%;
+height: 120px;
+object-fit: cover;
+border-radius: 15px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
+`
 
 export const LinkCard = styled(NavLink)`
     display: block;
@@ -69,7 +77,7 @@ export const DepartmentName = styled.p`
     line-height: 2.0;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 4px;
+    margin-top: 5%;
+    margin-bottom: auto;
     height: 55px;
 `;

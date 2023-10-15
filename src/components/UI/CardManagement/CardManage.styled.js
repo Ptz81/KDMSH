@@ -8,12 +8,12 @@ export const CardDescription = styled.div`
   flex-direction: column;
   background-color: var(--base);
   color: var(--mainColor);
-  height: 40%;
+  height: 30%;
    width: 100%;
   bottom: 0;
-  border-radius: 16px;
+  border-radius: 10px;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 1rem;
+  /* padding: 1rem; */
 `
 export const IconCard = styled.svg`
   width: 48px;
@@ -54,8 +54,10 @@ export const CardImage = styled.img`
 export const CardTitle = styled.p`
 font-size: 1rem;
   font-weight: 700;
+  text-align: center;
 `
 export const CardText = styled.p`
 font-size: 0.8rem;
-  line-height: 130%;
+  line-height: 100%;
+  text-align: center;
 `

@@ -22,6 +22,7 @@ ${'' /* margin-left: auto; */}
 
 export const AboutList = styled.ul`
 position: absolute;
+font-family: Montserrat, sans-serif;
  list-style-type: none;
  text-decoration: none;
 color: #3b3937;

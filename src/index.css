@@ -12,6 +12,7 @@ font-family: 'Marck Script', cursive;
     } */
     --mainColor: #212121;
     --accentColor: #ff4d4d;
+        --semiAccentColor: #e86969;
     --subColor: grey;
     --lightGrey: #f2f2f2;
     --base:#fff5ed;

@@ -1,26 +1,5 @@
 import { styled } from "styled-components";
 
-
-export const Title = styled.p`
-
-  color: var(--accentColor);
-  font-size: 1.5em;
-  line-height: normal;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-margin-top: 0.5em;
-`;
-export const Description = styled.p`
-
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5em;
-  color: var(--mainColor);
-
-`;
-export const Container = styled.div`
-
-`
 export const WrapperDepart = styled.div`
     display: block;
   position: relative;
@@ -67,25 +46,11 @@ export const WrapperDepart = styled.div`
 }
 `;
 
-export const DecoWrapper = styled.div`
-    display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,253,45,1) 100%);
-  border-radius: 0 4px 0 32px;
-
-`;
-
-export const DecoArrow= styled.div`
-   margin-top: -4px;
-  margin-right: -4px;
-  color: var(--mainColor);
-  font-family: courier, sans;
-
-`;
+export const ImageTitle = styled.img`
+width: 100%;
+height: 400px;
+/* object-fit: cover; */
+object-fit: contain;
+border-radius: 15px;
+ /* box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+`

@@ -5,7 +5,6 @@ import { AboutList, Link } from "./AboutElements.styled";
     <AboutList>
             <li>
         <button>
-
           <Link to="school">Про школу</Link>
         </button>
           
