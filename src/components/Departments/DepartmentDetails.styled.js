@@ -8,10 +8,9 @@ export const Title = styled.p`
   line-height: normal;
   font-weight: 700;
   margin-bottom: 0.5em;
-margin-top: 0.5em;
+  margin-top: 0.5em;
 `;
 export const Description = styled.p`
-
   font-size: 1em;
   font-weight: 400;
   line-height: 1.5em;
@@ -22,7 +21,7 @@ export const Container = styled.div`
 
 `
 export const WrapperDepart = styled.div`
-    display: block;
+  display: block;
   position: relative;
   max-width: auto;
   max-height: 600px;
@@ -68,7 +67,7 @@ export const WrapperDepart = styled.div`
 `;
 
 export const DecoWrapper = styled.div`
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -79,7 +78,6 @@ export const DecoWrapper = styled.div`
   right: 0;
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(250,253,45,1) 100%);
   border-radius: 0 4px 0 32px;
-
 `;
 
 export const DecoArrow= styled.div`
@@ -87,5 +85,4 @@ export const DecoArrow= styled.div`
   margin-right: -4px;
   color: var(--mainColor);
   font-family: courier, sans;
-
 `;
