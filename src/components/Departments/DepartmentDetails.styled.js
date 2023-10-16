@@ -4,14 +4,14 @@ import { styled } from "styled-components";
 export const Title = styled.p`
 
   color: var(--accentColor);
-  font-size: 1.5em;
+  font-size: 1.8em;
   line-height: normal;
   font-weight: 700;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 `;
 export const Description = styled.p`
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: 400;
   line-height: 1.5em;
   color: var(--mainColor);

@@ -13,7 +13,7 @@ export const WrapperDepart = styled.div`
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
- background-image: #a6ffa6;
+ background-image: #b87333;
   &:hover,
         &:focus {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

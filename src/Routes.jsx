@@ -21,12 +21,12 @@ export const WebRoutes = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />}>
+          <Route path="about" element={<About />}/>
   <Route path="school" element={<School />} />
   <Route path="management" element={<Mission />} />
   <Route path="team/:currentPage" element={<Team />} />
   <Route path="reviews" element={<Reviews />} />
-</Route>
+
 
         <Route path="departments" element={<Departments />} />
           <Route path="departments/:id" element={<DepartmentDetails />} />

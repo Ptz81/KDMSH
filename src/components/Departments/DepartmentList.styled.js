@@ -70,7 +70,7 @@ export const LinkCard = styled(NavLink)`
 export const DepartmentName = styled.p`
     font-weight: 700;
     font-size: 13px;
-    line-height: 2.0;
+    line-height: 1.4;
     letter-spacing: 0.06em;
     text-align: center;
     margin-top: 5%;

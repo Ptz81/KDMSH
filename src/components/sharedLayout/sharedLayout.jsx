@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Container, Header, Logo, Link, StyledHeader, LogoLink, LogoSpan } from "./SharedLayout.styled.js";
+import { Container, Header, Link, StyledHeader, LogoLink, LogoSpan, NavList, NavContainer, LogoContainer } from "./SharedLayout.styled.js";
 // import { GiGClef } from "react-icons/gi";
 // import { IconContext } from "react-icons";
 import { FooterPage } from "../pages/Footer/Footer.jsx";
@@ -52,7 +52,7 @@ export const SharedLayout = () => {
     <Container>
       <Header>
         <LogoLink to="/" end>
-        <Logo>
+        <LogoContainer>
         {/* <IconContext.Provider value={{ color: "#ff4d4d", size: '1.5em', className: "global-class-name" }}>
         <span role="img" aria-label="music icon">
         <GiGClef/>
@@ -60,24 +60,48 @@ export const SharedLayout = () => {
           </IconContext.Provider> */}
             <img src={iconLogo} />
             <LogoSpan>КДМШ №22</LogoSpan>
-          </Logo>
+          </LogoContainer>
         </LogoLink>
         {isMobileMenuVisible ? (
         <>
           <MenuForMobile/>
         </>
       ) : (
-        <nav>
-          <Link to="/" end>
+            <NavContainer>
+              <NavList>
+                <li>
+                  <Link to="/" end>
             Головна
           </Link>
-          <Link to="/about">Про нас
+                </li>
+                <li>
+            <Link to="/about">Про нас </Link>
+                <ul className="sub-menus">
+            <li>
+              <Link to="management">Дирекція</Link>
+            </li>
+            <li>
+              <Link to="team/1">Викладачі</Link>
+            </li>
+            <li>
+             <Link to="reviews">Умови вступу</Link>
+            </li>
+          </ul>
          
-          </Link>
-          <Link to="/departments">Відділи</Link>
-          <Link to="/bands">Колективи</Link>
-          <Link to="/contacts">Контакти</Link>
-            </nav>
+                </li>
+                <li>
+             <Link to="/departments">Відділи</Link>     
+               </li>
+                <li>
+                <Link to="/bands">Колективи</Link>   
+          </li>
+                <li>
+                <Link to="/contacts">Контакти</Link>  
+         </li>
+          
+              </NavList>
+          
+            </NavContainer>
             )}
       </Header>
        <Outlet /> 

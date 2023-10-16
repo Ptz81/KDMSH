@@ -32,7 +32,9 @@ line-height:150%;
 export const SectionImg = styled.img`
 width: 100%;
 height: auto;
-
+transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
 margin-bottom: 30px;
 box-shadow: 0px 0px 5px 0px rgba(255, 77, 77, 1);
 @media screen and (min-width: 558px) {
@@ -41,6 +43,9 @@ box-shadow: 0px 0px 5px 0px rgba(255, 77, 77, 1);
   @media screen and (min-width: 1100px) {
     width: 700px;
   }
+  &:hover{
+  transform: scale(1.1);
+}
 `
 export const Address = styled.address`
 /* border: 1px solid var(--accentColor); */

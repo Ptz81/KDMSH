@@ -109,7 +109,7 @@ const CardList = ({ items }) => {
           currentPage={currentPage}
           totalPages={Math.ceil(items.length / contentPerPage)}
           onChangePage={handleChangePage}
-          pageType="about/team"
+          pageType="team"
         />
       </ContainerBtnPagination>
     </>

@@ -21,7 +21,7 @@ const bands = [
     id: "q-1",
     name: "Оркестр народної музики 'Барвисті Візерунки'",
     photo: 'https://i.ibb.co/3CJPfYt/orhestra.jpg',
-    about: "lorem ipsum dolor sit amet, consectetur"
+    about: " Колектив оркестру народної музики «Барвисті візерунки» створений у 2008 році, має численні нагороди на багатьох міжнародних та всеукраїнських конкурсах-фестивалях як в Україні, так і за кордоном (Чехії, Угорщині, Італії та ін.). Репертуар оркестру складається з обробок українських пісень і танців народів світу."
   },
   {
     id: "q-2",
@@ -38,7 +38,7 @@ const bands = [
   {
     id: "q-4",
     name: "Ансамбль скрипалів",
-    photo: './src/assets/img/pexels-dmitry-demidov-3783471.jpg',
+    photo: 'https://i.ibb.co/FDxTGJX/image.jpg',
     about: "lorem ipsum dolor sit amet, consectetur"
   },
   {
