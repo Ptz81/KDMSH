@@ -10,7 +10,7 @@ export const Home = () => {
 
       <Carousel data={slides}/>
         <TitleComponent>
-          <svg><text x="2%" y="50%" dy=".15em">Ласкаво просимо у світ музики!</text></svg>
+          <svg><text x="12%" y="50%" dy=".15em">Ласкаво просимо у світ музики!</text></svg>
         </TitleComponent>
      
       </Section>

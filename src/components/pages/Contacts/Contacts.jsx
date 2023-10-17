@@ -13,7 +13,7 @@ export const Contacts = () => {
         </>
          
       <Address>
-        <ul style={{width:'400px'}}>
+        <ul>
         <li>
           <AddressComponent>Адреса:</AddressComponent> вулиця Зодчих, 30а, <br/>Київ, 03194
         </li>

@@ -1,8 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getBandById } from "../../../api";
 import { Container, DecoArrow, DecoWrapper, Description, Title } from "../Departments/DepartmentDetails.styled";
 import { ImageTitle } from "./Band.details.js";
 import { WrapperDepart } from "./Band.details";
+import { Button } from "../UI/Button/Button.styled";
 // import { useEffect, useState } from "react";
 // import { cardsData } from '../data/CardData.json';
 
@@ -16,7 +17,10 @@ export const BandDetails = () => {
 
   const { id } = useParams();
   const band = getBandById(id);
-
+const history = useNavigate(); 
+const handleGoBack = () => {
+     history(-1); 
+  };
   return (
     <Container>
       <WrapperDepart>
@@ -34,6 +38,7 @@ export const BandDetails = () => {
         
       </DecoWrapper>
       </WrapperDepart>
+      <Button onClick={handleGoBack}>Повернутися назад</Button>
     </Container>
     // <main>
     //   <Image src="https://via.placeholder.com/960x240" alt="" />

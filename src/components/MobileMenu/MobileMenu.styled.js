@@ -7,6 +7,7 @@ export const StyledMenuIcon = styled.img`
   width: 32px;
   height: 32px;
   cursor: pointer;
+  z-index: 999;
   transition: scale 0.5s ease-out;
   &:hover,
   &:focus {
@@ -24,7 +25,7 @@ export const StyledMenuWrapper = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 85px;
+  top: 50px;
   left: 0;
   width: 100vw;
   height: 100%;

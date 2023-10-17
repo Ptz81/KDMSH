@@ -7,10 +7,13 @@ margin: auto;
 
 export const Title = styled.h2`
 font-family: 'Montserrat', sans-serif;
-font-size: 36px;
+font-size: 24px;
 font-weight: 600;
 text-align: center;
-color: var(--accentColor)
+color: var(--accentColor);
+@media screen and (min-width: 558px) {
+    font-size: 36px;
+  }
 `;
 
 export const SectionComponent = styled.div`
@@ -30,7 +33,7 @@ line-height:150%;
 `;
 
 export const SectionImg = styled.img`
-width: 100%;
+width: 300px;
 height: auto;
 transform: scale(1);
   transform-origin: 50% 50%;
@@ -38,7 +41,7 @@ transform: scale(1);
 margin-bottom: 30px;
 box-shadow: 0px 0px 5px 0px rgba(255, 77, 77, 1);
 @media screen and (min-width: 558px) {
-    width: 500px;
+    width: 400px;
   }
   @media screen and (min-width: 1100px) {
     width: 700px;
@@ -56,8 +59,15 @@ box-sizing: border-box;
 width: 100%;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+ul{
+  width: 100%;
+}
+
 @media screen and (min-width: 558px) {
     width: 500px;
+    ul{
+  width: 400px;
+}
   }
 @media screen and (min-width: 1100px) {
     font-size: 18px;

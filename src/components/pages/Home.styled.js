@@ -19,7 +19,6 @@ border-radius: 15px;
 
 export const TitleComponent = styled.div`
 margin-top: 20px;
-
 svg {
 	width: 100%; height: 100%;
 }

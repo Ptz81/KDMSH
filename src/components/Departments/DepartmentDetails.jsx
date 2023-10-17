@@ -1,21 +1,16 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { getDepartmentById } from "../../../api";
 import { ImageTitle } from "../pages/Home.styled";
 import { Container, DecoArrow, DecoWrapper, Description, Title, WrapperDepart } from "./DepartmentDetails.styled";
-import { cardsData } from '../data/CardData.json';
-import { useEffect, useState } from "react";
-import CardList from "../Pagination/CardList";
+import { Button } from "../UI/Button/Button.styled";
 
 export const DepartmentDetails = () => {
-   const [filteredData, setFilteredData] = useState([]);
 const { id } = useParams();
   const department = getDepartmentById(id);
- useEffect(() => {
-  const filteredCards = cardsData.filter((card) => card.department === department.name);
-  setFilteredData(filteredCards);
-}, [department.name]);
-
-  
+  const history = useNavigate(); 
+const handleGoBack = () => {
+     history(-1); 
+  };
   return (
     <Container>
       <WrapperDepart>
@@ -33,8 +28,7 @@ const { id } = useParams();
         
       </DecoWrapper>
       </WrapperDepart>
-     
-<CardList items={filteredData}/>
+      <Button onClick={handleGoBack}>Повернутися назад</Button>
     </Container>
     
   );

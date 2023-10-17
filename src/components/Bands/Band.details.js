@@ -9,7 +9,8 @@ export const WrapperDepart = styled.div`
  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 10px;
   padding: 2em 1.2em;
-  margin: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;

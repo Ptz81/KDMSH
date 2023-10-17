@@ -10,6 +10,15 @@ const Navigation = ({ closeMobileMenu }) => {
       <StyledNavLink to="/about" onClick={closeMobileMenu}>
         Про нас
       </StyledNavLink>
+      <StyledNavLink to="management" onClick={closeMobileMenu}>
+        Дирекція
+      </StyledNavLink>
+      <StyledNavLink to="team/1" onClick={closeMobileMenu}>
+        Викладачі
+      </StyledNavLink>
+      <StyledNavLink to="reviews" onClick={closeMobileMenu}>
+        Умови вступу
+      </StyledNavLink>
       <StyledNavLink to="/departments" onClick={closeMobileMenu}>
         Відділи
       </StyledNavLink>
