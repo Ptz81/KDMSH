@@ -76,13 +76,13 @@ import Pagination from './Pagination.jsx';
 import Cards from '../UI/Card/Card.jsx';
 
 const CardList = ({ items }) => {
-  const [contentPerPage, setContentPerPage] = useState(6);
+  const [contentPerPage, setContentPerPage] = useState(16);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     const changeNumberItems = () => {
       if (window.innerWidth > 778) {
-        setContentPerPage(6);
+        setContentPerPage(16);
       } else {
         setContentPerPage(2);
       }

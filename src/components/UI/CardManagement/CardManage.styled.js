@@ -24,8 +24,8 @@ export const IconCard = styled.svg`
 `;
 
 export const CardContainer = styled.div`
-  height: 254px;
- 
+  height: 250px;
+ max-width: 220px;
   flex-grow: 1;
   flex-basis: 190px;
   position: relative;

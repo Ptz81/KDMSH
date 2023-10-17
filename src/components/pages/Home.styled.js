@@ -57,8 +57,8 @@ margin: auto;
 `;
 export const SectionComponent = styled.section`
 max-width: 1200px;
-margin-left: 200px;
-/* margin-top:20px; */
+/* margin-left: 200px; */
+margin-top:20px;
 font-size: 18px;
 line-height:150%;
 `;
@@ -66,14 +66,18 @@ line-height:150%;
 export const MainTitle = styled.h3`
 color: var(--accentColor);
 font-weight: bold;
-font-size: 24px;
-margin-bottom: 20px;
+font-size: 36px;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 50px;
 `;
 export const MainText = styled.div`
 color: var(--mainColor);
 display:flex;
+justify-content: center;
 flex-direction:column;
 font-size: 16px;
+line-height: 1.5;
 margin-bottom: 20px;
 `;
 

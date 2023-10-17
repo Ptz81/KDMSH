@@ -108,26 +108,43 @@ export const StyledHeader = styled.header`
 `;
 
 export const NavContainer = styled.nav`
- 
+ font-size: 16px;
 
 ul.sub-menus {
     height: auto;
     overflow: hidden;
-    width: 170px;
+    width: 140px;
+    font-size: 10px;
+    line-height: 2;
     background: #FFF5ED;
     position: absolute;
+    top:43px;
     z-index: 99;
     display: none;
+    border-radius: 10px;
+   
   }
 
   ul.sub-menus li {
     display: block;
     width: 100%;
+
+  }
+  ul.sub-menus li:first-child{
+    margin-top: 20px;
+  }
+  ul.sub-menus li:last-child{
+    margin-bottom: 20px;
   }
 
   ul.sub-menus a {
     color: #FF4D4D;
     font-size: 16px;
+    margin-left: 10px;
+    &.active {
+    color: white;
+    /* background-color: #ff4d4d; */
+  }
   }
 
   li:hover ul.sub-menus {

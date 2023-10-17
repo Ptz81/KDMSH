@@ -1,4 +1,4 @@
-import { MainText, MainTitle, SectionComponent } from "./Home.styled";
+import {  MainTitle, SectionComponent } from "./Home.styled";
 import {cardsData} from '../data/CardData.json';
 import { useEffect, useState } from "react";
 import CardList from "../Pagination/CardList";
@@ -14,15 +14,7 @@ export const Team = () => {
       <MainTitle>
         Викладацький склад
       </MainTitle>
-      <MainText>
-        В школі творчо і натхненно працює понад 50 висококваліфікованих викладачів, які мають
-        значний професійний досвід,гарантують індивідуальний підхід до кожного учня.
-        Вони всебічно працюють над розвитком музичної грамотності, техніки гри, виразності та
-        інтерпретації для забезпечення найкращих результатів навчання.
-        Щорічно в школі навчаються 410 учнів з 5 до 18 років.
-      </MainText>
-
-      <CardList items={data}/>
+          <CardList items={data}/>
       
     </SectionComponent>
   );

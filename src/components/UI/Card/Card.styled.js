@@ -14,7 +14,7 @@ export const ContainerCard = styled.li`
   aspect-ratio: 16/9;
   background-color: var(--base);
   border-radius: 5px;
-  max-width: 250px;
+  max-width: 230px;
   flex-grow: 1;
   flex-basis: 250px;
   overflow: hidden;
@@ -46,19 +46,19 @@ export const Card = styled.div`
 `
 
 export const Content = styled.p`
- margin: 10px 0 10px;
+ margin: 5px 0 5px;
   font-size: 12px;
   color: var(--mainColor);
   line-height: 1.4;
 `
 export const CardTitle = styled.p`
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
   color: var(--mainColor);
   font-weight: 700;
 `
 export const CardBtn = styled.button`
-  padding: 15px;
+  padding: 10px;
   border-radius: 8px;
   background: var(--accentColor);
   border: none;
