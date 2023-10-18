@@ -23,7 +23,7 @@ svg {
 	width: 100%; height: 100%;
 }
 svg text {
-
+font-size: 40px; 
 	animation: stroke 5s infinite alternate;
   animation-delay: 3s;
 	stroke-width: 2;
@@ -33,7 +33,7 @@ svg text {
 	font-size: 5vw;
   text-align: center;
   @media screen and (min-width: 1200px) {
-      font-size: 66px; 
+      font-size: 60px; 
   }
 }
 @keyframes stroke {
@@ -52,32 +52,41 @@ svg text {
 
 export const MainSection = styled.div`
 margin: auto;
-
+min-height: 500px;
 `;
 export const SectionComponent = styled.section`
 max-width: 1200px;
 /* margin-left: 200px; */
-margin-top:20px;
+margin-bottom:200px;
 font-size: 18px;
 line-height:150%;
+min-height: 500px;
 `;
 
 export const MainTitle = styled.h3`
 color: var(--accentColor);
 font-weight: bold;
-font-size: 36px;
+font-size: 24px;
+line-height: 1.4;
 text-align: center;
 text-transform: uppercase;
+margin-bottom: 20px;
+@media screen and (min-width: 778px) {
+font-size: 32px;
 margin-bottom: 50px;
+  }
 `;
 export const MainText = styled.div`
 color: var(--mainColor);
 display:flex;
 justify-content: center;
 flex-direction:column;
-font-size: 16px;
+font-size: 12px;
 line-height: 1.5;
 margin-bottom: 20px;
+@media screen and (min-width: 778px) {
+font-size: 16px;
+  }
 `;
 
 export const FormText = styled.div`

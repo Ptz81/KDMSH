@@ -23,7 +23,7 @@ export const CardList = styled.li`
  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
  cursor:pointer;
  border-radius: 15px;
-    width: 400px;
+    width: 320px;
     &:hover,
         &:focus {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -35,11 +35,13 @@ export const CardList = styled.li`
 
   > a {
     text-decoration: none;
+    margin-left: auto;
+    margin-right:auto;
   }
   > a img {
     margin-top: 10px;
     border: 1px solid var(--border-header);
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
       margin-left: auto;
   margin-right: auto;
@@ -48,7 +50,7 @@ export const CardList = styled.li`
 
 export const ImageTitle = styled.img`
 width: 100%;
-height: 120px;
+height: 140px;
 object-fit: cover;
 border-radius: 15px;
  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -69,11 +71,11 @@ export const LinkCard = styled(NavLink)`
 
 export const DepartmentName = styled.p`
     font-weight: 700;
-    font-size: 13px;
-    line-height: 1.4;
+    font-size: 12px;
+    line-height: 1.2;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: auto;
-    height: 55px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* height: 60px; */
 `;

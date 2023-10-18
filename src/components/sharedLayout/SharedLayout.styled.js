@@ -148,7 +148,7 @@ ul.sub-menus {
   ul.sub-menus a {
     /* color: #FF4D4D; */
     color: var(--accentColor);
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 10px;
     &.active {
     color: white;

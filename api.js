@@ -31,9 +31,9 @@ const bands = [
   },
   {
     id: "q-3",
-    name: "Дитячий хор",
+    name: 'Дитячий хор "Струмочок"',
     photo: 'https://i.ibb.co/mztr6F7/IMG-20230120-160646-225.jpg',
-    about: "lorem ipsum dolor sit amet, consectetur"
+    about: "Керівник: Євгенія Пучко, концертмейстер: Наталія Лук’янчук"
   },
   {
     id: "q-4",

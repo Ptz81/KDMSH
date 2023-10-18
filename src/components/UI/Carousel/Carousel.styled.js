@@ -5,10 +5,14 @@ export const CarouselWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  height: 550px;
+  width: 90%;
+  max-height: 550px;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: 778px) {
+width: 70%;
+height: auto;
+  }
 `;
 
 export const Slide = styled.img`

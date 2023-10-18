@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
-    position: fixed;
+    position: relative;
      ${'' /* background-color: #d3ffd3; */}
-  color: #3b3937;
+  color: var(--accentColor);
   border-top: 1px solid var(--accentColor);
   display: flex;
   align-items: center;
@@ -21,5 +21,5 @@ export const Footer = styled.footer`
 export const CopyRight = styled.div`
   color: #212121;
   font-size: 10px;
-  padding: 25px 50px;
+  padding: 10px 20px;
 `;

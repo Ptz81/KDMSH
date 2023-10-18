@@ -22,5 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-main.jsx
-vite.config.js
+*main.jsx
+*vite.config.js

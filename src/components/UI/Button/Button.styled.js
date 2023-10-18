@@ -7,7 +7,8 @@ padding: 15px 25px;
  color: white;
  z-index: 1;
  background-color: var(--accentColor);
-
+margin-left: auto;
+margin-right: auto;
  backdrop-filter: blur(10px);
  ${'' /* border: 0.5px solid var(--subColor); */}
  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
