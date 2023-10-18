@@ -5,8 +5,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
-  // <BrowserRouter>
-     <BrowserRouter basename="/KDMSH">
+  <BrowserRouter>
+     {/* <BrowserRouter basename="/KDMSH"> */}
       <App />
     </BrowserRouter>
 
