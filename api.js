@@ -27,12 +27,12 @@ const bands = [
     id: "q-2",
     name: "Фортепіанний дует 'Но-Та'",
     photo: 'https://i.ibb.co/Khng8mg/Nota.jpg',
-    about: "lorem ipsum dolor sit amet, consectetur"
+    about: "Фортепіанний дует «НоТа» у складі викладачів - Нонни Козлової і Тетяни Чайки, лауреати Міжнародних премій «Дружба» та ім. С.Гулака-Артемовського, КДМШ №22 "
   },
   {
     id: "q-3",
     name: "Дитячий хор",
-    photo: './src/assets/img/pexels-dmitry-demidov-3783471.jpg',
+    photo: 'https://i.ibb.co/mztr6F7/IMG-20230120-160646-225.jpg',
     about: "lorem ipsum dolor sit amet, consectetur"
   },
   {
@@ -44,7 +44,7 @@ const bands = [
   {
     id: "q-5",
     name: "Ансамбль флейтистів",
-    photo: 'https://i.ibb.co/g46hpBN/Tamara.jpg',
+    photo: 'https://i.ibb.co/5WKxV46/IMG-20230508-154004-124.jpg',
     about: "lorem ipsum dolor sit amet, consectetur"
   },
   {

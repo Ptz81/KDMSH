@@ -52,13 +52,18 @@ export const LogoContainer = styled.div`
 padding: 5px 10px;
   border-radius: 4px;
   text-decoration: none;
-  color: #3b3937;
+  /* color: #3b3937; */
+  color: var(--accentColor);
   font-weight: 500;
   margin-left: 20px;
 position: relative;
+svg{
+  fill: var(--accentColor);
+}
   &.active {
     color: white;
-    background-color: #ff4d4d;
+    /* background-color: #ff4d4d; */
+    background-color:var(--accentColor)
   }
 `
 
@@ -66,13 +71,15 @@ export const Link = styled(NavLink)`
   padding: 5px 10px;
   border-radius: 4px;
   text-decoration: none;
-  color: #3b3937;
+  /* color: #3b3937; */
+  color: var(--mainColor);
   font-weight: 500;
   margin-left: 20px;
 position: relative;
   &.active {
     color: white;
-    background-color: #ff4d4d;
+    /* background-color: #ff4d4d; */
+    background-color:var(--accentColor)
   }
 `;
 
@@ -116,7 +123,8 @@ ul.sub-menus {
     width: 140px;
     font-size: 10px;
     line-height: 2;
-    background: #FFF5ED;
+    /* background: #FFF5ED; */
+    background: var(--base);
     position: absolute;
     top:43px;
     z-index: 99;
@@ -138,7 +146,8 @@ ul.sub-menus {
   }
 
   ul.sub-menus a {
-    color: #FF4D4D;
+    /* color: #FF4D4D; */
+    color: var(--accentColor);
     font-size: 16px;
     margin-left: 10px;
     &.active {
@@ -152,7 +161,7 @@ ul.sub-menus {
   }
 
   ul.sub-menus a:hover {
-    background: #f2f2f2;
-    color: #212121;
+    background: var(--lightGrey);
+    color: var(--mainColor);
   }
   `

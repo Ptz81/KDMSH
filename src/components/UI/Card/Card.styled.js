@@ -18,7 +18,7 @@ export const ContainerCard = styled.li`
   flex-grow: 1;
   flex-basis: 250px;
   overflow: hidden;
-  box-shadow: 0 0 0 5px #ff4d4d20;
+  box-shadow: 0 0 0 2px #e86969;
   transition: all 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
    &:hover {
     transform: scale(1.03);

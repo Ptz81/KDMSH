@@ -27,7 +27,7 @@ svg text {
 	animation: stroke 5s infinite alternate;
   animation-delay: 3s;
 	stroke-width: 2;
-	stroke: #FF4D4D;
+	stroke: var(--accentColor);
   fill: #fff5ed;
   font-family: 'Marck Script';
 	font-size: 5vw;
