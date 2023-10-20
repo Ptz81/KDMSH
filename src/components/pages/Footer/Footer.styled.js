@@ -22,4 +22,5 @@ export const CopyRight = styled.div`
   color: #212121;
   font-size: 10px;
   padding: 10px 20px;
+
 `;

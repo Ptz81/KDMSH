@@ -19,6 +19,7 @@ margin-right: auto;
  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
  transition: all 250ms;
  overflow: hidden;
+ margin-bottom: 20px;
  /* margin-top: 20px; */
 
 &:hover {

@@ -12,7 +12,10 @@ export const SocialContainer = styled.div`
 export const SocialTitle = styled.p`
   color: var(--mainColor);
   font-weight: bold;
-  /* margin-bottom: 10px; */
+  margin-bottom: 5px;
+  @media screen and (min-width: 778px) {
+margin-bottom: 10px;
+  }
 `;
 
 export const Link = styled(NavLink)`

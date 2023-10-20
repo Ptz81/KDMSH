@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const CardDescription = styled.div`
  display: flex;
   position: absolute;
-  gap: 0.5em;
+  gap: 0.4em;
   flex-direction: column;
   background-color: var(--base);
   color: var(--mainColor);
@@ -24,8 +24,9 @@ export const IconCard = styled.svg`
 `;
 
 export const CardContainer = styled.div`
-  height: 250px;
- max-width: 220px;
+  height: 220px;
+ max-width: 200px;
+ margin-bottom: 10px;
   flex-grow: 1;
   flex-basis: 190px;
   position: relative;

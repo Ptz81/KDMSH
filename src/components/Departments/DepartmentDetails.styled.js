@@ -22,7 +22,8 @@ export const Description = styled.p`
 export const Container = styled.div`
 margin-bottom: 20px;
 margin: auto;
-min-height: 500px;
+min-height: 700px;
+/* margin-bottom: 20px; */
 `
 export const WrapperDepart = styled.div`
   display: block;

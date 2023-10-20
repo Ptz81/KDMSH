@@ -7,21 +7,27 @@ margin-top:20px
 `
 export const ContainerCard= styled.div`
 width: 100%;
-/* margin-bottom: 20px; */
+box-sizing: border-box;
 border-radius: 20px;
-margin-top: 10px;
+ padding: 5px 10px;
+ text-align: center;
+
 @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
   }
 `
 export const Image = styled.img`
 object-fit: cover;
-width: 100%;
-height: 200px;
+width: 90%;
+height: 300px;
+/* text-align: center; */
 border-radius: 10px;
 @media screen and (min-width: 768px) {
     height: 400px;
+    width: 100%;
     border-radius: 20px;
   }
 `

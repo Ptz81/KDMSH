@@ -1,11 +1,11 @@
 // import { Image } from "./Home.styled";
 import Carousel from "../UI/Carousel/Carousel.jsx";
 import { slides } from "../data/carouselData.json";
-import { MainSection, Section, TitleComponent } from "./Home.styled";
+import { Section, TitleComponent } from "./Home.styled";
 
 export const Home = () => {
   return (
-    <MainSection>
+    // <MainSection>
       <Section> 
 
       <Carousel data={slides}/>
@@ -15,6 +15,6 @@ export const Home = () => {
      
       </Section>
       
-    </MainSection>
+    // </MainSection>
   );
 };

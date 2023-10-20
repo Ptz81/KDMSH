@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
      width:100%;
-    margin-bottom: 100px;
-    
+    /* margin-bottom: 100px; */
+    min-height: 700px;
 `;
 
 export const CardWrapper = styled.ul`
@@ -15,6 +15,7 @@ export const CardWrapper = styled.ul`
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 `;
 
 export const CardList = styled.li`

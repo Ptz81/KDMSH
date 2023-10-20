@@ -18,7 +18,7 @@ border-radius: 15px;
 `
 
 export const TitleComponent = styled.div`
-margin-top: 20px;
+/* margin-top: 20px; */
 svg {
 	width: 100%; height: 100%;
 }
@@ -51,16 +51,22 @@ font-size: 40px;
 `;
 
 export const MainSection = styled.div`
-margin: auto;
-min-height: 500px;
+/* margin: auto; */
+/* min-height: 500px;
+@media screen and (min-width: 778px) {
+min-height: 700px;
+  } */
 `;
 export const SectionComponent = styled.section`
 max-width: 1200px;
 /* margin-left: 200px; */
-margin-bottom:200px;
+/* margin-bottom:200px; */
 font-size: 18px;
 line-height:150%;
 min-height: 500px;
+@media screen and (min-width: 778px) {
+min-height: 700px;
+  }
 `;
 
 export const MainTitle = styled.h3`
@@ -91,6 +97,7 @@ font-size: 16px;
 
 export const FormText = styled.div`
 margin-top: 40px;
+margin-bottom: 10px;
 `
 export const FormList = styled.ul`
 margin-bottom: 20px;

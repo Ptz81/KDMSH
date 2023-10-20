@@ -4,28 +4,41 @@ import { Container, DecoArrow, DecoWrapper, Description, Title } from "../Depart
 import { ImageTitle } from "./Band.details.js";
 import { WrapperDepart } from "./Band.details";
 import { Button } from "../UI/Button/Button.styled";
-// import { useEffect, useState } from "react";
-// import { cardsData } from '../data/CardData.json';
+// import { CardIcon } from "../UI/Card/Card.styled";
 
 export const BandDetails = () => {
-// const [filteredData, setFilteredData] = useState([]);
-
-//  useEffect(() => {
-//   const filteredCards = cardsData.filter((card) => card.band === band.name);
-//   setFilteredData(filteredCards);
-// }, [band.name]);
-
   const { id } = useParams();
   const band = getBandById(id);
 const history = useNavigate(); 
 const handleGoBack = () => {
      history(-1); 
-  };
+};
+//   function handleImageError(e) {
+//   e.target.style.display = 'none'; 
+//      const placeholderDiv = document.createElement('div');
+//   placeholderDiv.style.width = '100%';
+//   placeholderDiv.style.height = '400px';
+//   placeholderDiv.style.backgroundColor = 'lightgrey';
+
+  
+//   e.target.parentNode.appendChild(placeholderDiv);
+// }
   return (
     <Container>
       <WrapperDepart>
-         <ImageTitle src={band.photo} alt={band.name}  />
-   
+        <ImageTitle
+  src={band.photo}
+  alt={band.name}
+  onError={(e) => {
+    e.target.style.display = 'none';
+    const placeholderDiv = document.createElement('div');
+    placeholderDiv.style.width = '100%';
+    placeholderDiv.style.height = '200px';
+    placeholderDiv.style.border = '1px solid var(--accentColor)'
+    placeholderDiv.style.backgroundColor = 'linear-gradient(to right, #fff5ed 0 90%)';
+    e.target.parentNode.insertBefore(placeholderDiv, e.target);
+  }}
+/>
         <Title>
           {band.name} 
         </Title>
@@ -40,21 +53,6 @@ const handleGoBack = () => {
       </WrapperDepart>
       <Button onClick={handleGoBack}>Повернутися назад</Button>
     </Container>
-    // <main>
-    //   <Image src="https://via.placeholder.com/960x240" alt="" />
-    //   <div>
-    //     <h2>
-    //       Band - {band.name} - {id}
-    //     </h2>
-    //     <p>
-    //       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-    //       sunt excepturi nesciunt iusto dignissimos assumenda ab quae cupiditate
-    //       a, sed reprehenderit? Deleniti optio quasi, amet natus reiciendis
-    //       atque fuga dolore? Lorem, ipsum dolor sit amet consectetur adipisicing
-    //       elit. Impedit suscipit quisquam incidunt commodi fugiat aliquam
-    //       praesentium ipsum quos unde voluptatum?
-    //     </p>
-    //   </div>
-    // </main>
+   
   );
 };

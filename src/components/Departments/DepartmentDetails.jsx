@@ -14,8 +14,20 @@ const handleGoBack = () => {
   return (
     <Container>
       <WrapperDepart>
-         <ImageTitle src={department.photo} alt={department.name}  />
-   
+         {/* <ImageTitle src={department.photo} alt={department.name}  /> */}
+    <ImageTitle
+  src={department.photo}
+  alt={department.name}
+  onError={(e) => {
+    e.target.style.display = 'none';
+    const placeholderDiv = document.createElement('div');
+    placeholderDiv.style.width = '100%';
+    placeholderDiv.style.height = '200px';
+    placeholderDiv.style.border = '1px solid var(--accentColor)'
+    placeholderDiv.style.backgroundColor = 'linear-gradient(to right, #fff5ed 0 90%)';
+    e.target.parentNode.insertBefore(placeholderDiv, e.target);
+  }}
+/>
         <Title>
           {department.name} 
         </Title>
