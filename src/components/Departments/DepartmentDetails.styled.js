@@ -11,14 +11,18 @@ export const Title = styled.p`
   margin-top: 0.5em;
 `;
 export const Description = styled.p`
-  font-size: 1.4em;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5em;
   color: var(--mainColor);
-
+  @media screen and (min-width: 778px) {
+  font-size: 1.4em;
+  }
 `;
 export const Container = styled.div`
-
+margin-bottom: 20px;
+margin: auto;
+min-height: 500px;
 `
 export const WrapperDepart = styled.div`
   display: block;
@@ -35,6 +39,9 @@ export const WrapperDepart = styled.div`
   z-index: 0;
   overflow: hidden;
  background-image: #a6ffa6;
+ >img{
+  width: 95%;
+ }
   &:hover,
         &:focus {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

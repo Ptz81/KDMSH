@@ -14,24 +14,37 @@ const ModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  
 `;
 
 const ModalContent = styled.div`
   background-color: #fff;
-  width: 540px;
+  width: 400px;
   max-height: auto;
   position: relative;
-  padding: 40px;
-  margin: 20px;
+  padding: 20px;
+  margin: 10px;
+  /* margin-top: 50px; */
   overflow-y: auto;
+  border-radius: 12px;
+   @media screen and (min-width: 768px) {
+   /* padding: 40px; */
+  margin: 20px;
+  width: 540px;
+  
   border-radius: 24px;
+  }
 `;
 
 const CloseButton = styled.div`
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
+   @media screen and (min-width: 768px) {
+ top: 15px;
+  right: 15px;
+  }
 `;
 
 const Modal = ({ isOpen, closeModal, children}) => {
