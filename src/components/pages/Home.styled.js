@@ -7,6 +7,7 @@ export const Image = styled.img`
 export const Section = styled.section`
 margin-left: auto;
 margin-right: auto;
+min-height: 700px;
 `
 
 export const ImageTitle = styled.img`
@@ -72,7 +73,7 @@ min-height: 700px;
 export const MainTitle = styled.h3`
 color: var(--accentColor);
 font-weight: bold;
-font-size: 24px;
+font-size: 20px;
 line-height: 1.4;
 text-align: center;
 text-transform: uppercase;
@@ -87,7 +88,7 @@ color: var(--mainColor);
 display:flex;
 justify-content: center;
 flex-direction:column;
-font-size: 12px;
+font-size: 14px;
 line-height: 1.5;
 margin-bottom: 20px;
 @media screen and (min-width: 778px) {
@@ -101,6 +102,7 @@ margin-bottom: 10px;
 `
 export const FormList = styled.ul`
 margin-bottom: 20px;
+font-size: 14px;
 `
 
 export const FormItem = styled.li`

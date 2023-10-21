@@ -2,8 +2,10 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
 font-size: inherit;
+@media screen and (min-width: 768px) {
 margin-bottom:20px;
 margin-top:20px
+  }
 `
 export const ContainerCard= styled.div`
 width: 100%;
@@ -21,7 +23,7 @@ border-radius: 20px;
 `
 export const Image = styled.img`
 object-fit: cover;
-width: 90%;
+width: 100%;
 height: 300px;
 /* text-align: center; */
 border-radius: 10px;
@@ -46,8 +48,10 @@ export const CardIcon = styled.svg`
 `;
 export const Info = styled.div`
 font-size: 14px;
+padding: 5px 10px;
 @media screen and (min-width: 768px) {
       font-size: 20px;
+      padding: 10px 20px;
   }
 `
 export const Name = styled.p`

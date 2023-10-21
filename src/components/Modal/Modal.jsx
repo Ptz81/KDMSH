@@ -20,18 +20,14 @@ const ModalOverlay = styled.div`
 const ModalContent = styled.div`
   background-color: #fff;
   width: 400px;
-  max-height: auto;
   position: relative;
   padding: 20px;
   margin: 10px;
-  /* margin-top: 50px; */
   overflow-y: auto;
   border-radius: 12px;
    @media screen and (min-width: 768px) {
-   /* padding: 40px; */
-  margin: 20px;
+  margin: 0;
   width: 540px;
-  
   border-radius: 24px;
   }
 `;

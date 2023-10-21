@@ -56,7 +56,7 @@ const bands = [
   {
     id: "q-7",
     name: "Фольклорний ансамбль",
-    photo: './src/assets/img/pexels-dmit1ry-demidov-3783471.jpg',
+    photo: './src/assets/img/pexels-dmitry-demidov-3783471.jpg',
     about: "lorem ipsum dolor sit amet, consectetur"
   },
   {

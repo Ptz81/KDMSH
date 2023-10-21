@@ -49,9 +49,12 @@ export const WrapperDepart = styled.div`
 
 export const ImageTitle = styled.img`
 width: 100%;
-height: 400px;
+height: auto;
 /* object-fit: cover; */
 object-fit: contain;
 border-radius: 15px;
  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+ @media screen and (min-width: 778px) {
+  height: 400px;
+  }
 `

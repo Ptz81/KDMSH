@@ -5,12 +5,12 @@ export const CarouselWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  max-height: 550px;
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: 778px) {
-width: 70%;
+width: 800px;
 height: auto;
   }
 `;
@@ -19,7 +19,7 @@ export const Slide = styled.img`
   border-radius: 0.5rem;
   box-shadow: 0px 0px 7px #666;
   width: 100%;
-  height: 100%;
+  height: 500px;
   display: ${(props) => (props.active ? "block" : "none")};
   object-fit:cover;
 `;
@@ -29,7 +29,7 @@ export const Arrow = styled.div`
   filter: drop-shadow(0px 0px 5px #555);
   width: 2rem;
   height: 2rem;
-  color: white;
+  color: #212121;
   cursor: pointer;
 `;
 
