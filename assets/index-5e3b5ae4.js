@@ -1321,7 +1321,7 @@ font-size: 14px;
   position: relative;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 16px;
-  box-shadow: 0 0 20px 8px #d0d0d0;
+  box-shadow: 0 0 2px 1px var(--accentColor);
   overflow: hidden;
 
   &:hover ${x1} {
