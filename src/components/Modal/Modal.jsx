@@ -2,6 +2,7 @@
 import { FaTimes } from "react-icons/fa";
 import styled from "@emotion/styled";
 import PropTypes from "prop-types";
+import { useEffect } from "react";
 
 const ModalOverlay = styled.div`
   position: fixed;
@@ -52,7 +53,17 @@ const Modal = ({ isOpen, closeModal, children}) => {
     if (e.target === e.currentTarget) {
       closeModal();
     }
-  };
+   };
+   useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = 'auto';
+    }
+  }, [isOpen]);
+
   return (
     <>
       {isOpen && (

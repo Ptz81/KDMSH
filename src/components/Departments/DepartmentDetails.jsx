@@ -40,7 +40,7 @@ const handleGoBack = () => {
         
       </DecoWrapper>
       </WrapperDepart>
-      <Button onClick={handleGoBack}>Повернутися назад</Button>
+      <Button aria-label="go back" onClick={handleGoBack}>Повернутися назад</Button>
     </Container>
     
   );

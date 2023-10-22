@@ -58,7 +58,7 @@ export const SharedLayout = () => {
         <GiGClef/>
             </span>{""}  
           </IconContext.Provider> */}
-            <img src={iconLogo} />
+            <img src={iconLogo} alt="logo"/>
             <LogoSpan>КДМШ №22</LogoSpan>
           </LogoContainer>
         </LogoLink>

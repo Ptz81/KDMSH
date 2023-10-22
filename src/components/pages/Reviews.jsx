@@ -24,7 +24,7 @@ export const Reviews = () => {
           Заповнити форму рєстрації для вступу можна за посиланням:
         </MainText>
         <Link to='https://forms.gle/PVcbo8fZEWQrJm4G8' target="_blank">
-            <Button>
+            <Button aria-label="registration">
               <ButtonTitle>Форма рєстрації</ButtonTitle>
           </Button>
           </Link>

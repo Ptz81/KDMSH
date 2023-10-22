@@ -6,16 +6,7 @@ import { CardIcon } from "../UI/Card/Card.styled";
 
 export const BandList = ({ bands }) => {
   return (
-    // <Container>
-    //   {bands.map((band) => (
-    //     <CardWrapper key={band.id}>
-    //       <Link to={`${band.id}`}>
-    //         <Image src="https://via.placeholder.com/200x100" alt="" />
-    //         <DepartmentName>{band.name}</DepartmentName>
-    //       </Link>
-    //     </CardWrapper>
-    //   ))}
-    // </Container>
+
       <Container> 
       <CardWrapper>
       {bands.map((band) => (

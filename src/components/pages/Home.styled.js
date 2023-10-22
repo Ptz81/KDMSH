@@ -92,7 +92,7 @@ font-size: 14px;
 line-height: 1.5;
 margin-bottom: 20px;
 @media screen and (min-width: 778px) {
-font-size: 16px;
+font-size: 18px;
   }
 `;
 
@@ -103,6 +103,9 @@ margin-bottom: 10px;
 export const FormList = styled.ul`
 margin-bottom: 20px;
 font-size: 14px;
+@media screen and (min-width: 778px) {
+font-size: 18px;
+  }
 `
 
 export const FormItem = styled.li`
@@ -113,4 +116,7 @@ export const CommentText = styled.p`
 color: var(--accentColor);
 font-size: 12px;
 line-height: 1.1;
+@media screen and (min-width: 778px) {
+font-size: 14px;
+  }
 `
