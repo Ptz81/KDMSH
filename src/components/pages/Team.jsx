@@ -2,6 +2,7 @@ import {  MainTitle, SectionComponent } from "./Home.styled";
 import {cardsData} from '../data/CardData.json';
 import { useEffect, useState } from "react";
 import CardList from "../Pagination/CardList";
+import NavMenu from "../NavMenu/NavMenu";
 
 export const Team = () => {
   const [data, setData] = useState([]); 
@@ -14,6 +15,7 @@ export const Team = () => {
       <MainTitle>
         Викладацький склад
       </MainTitle>
+      <NavMenu setFilteredCards={setData} data={data} />
           <CardList items={data}/>
       
     </SectionComponent>

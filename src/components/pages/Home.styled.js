@@ -80,7 +80,7 @@ text-transform: uppercase;
 margin-bottom: 20px;
 @media screen and (min-width: 778px) {
 font-size: 32px;
-margin-bottom: 50px;
+margin-bottom: 20px;
   }
 `;
 export const MainText = styled.div`
