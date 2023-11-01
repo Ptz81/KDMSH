@@ -53,10 +53,10 @@ font-size: 40px;
 
 export const MainSection = styled.div`
 /* margin: auto; */
-/* min-height: 500px;
+min-height: 500px;
 @media screen and (min-width: 778px) {
 min-height: 700px;
-  } */
+  }
 `;
 export const SectionComponent = styled.section`
 max-width: 1200px;
@@ -88,11 +88,11 @@ color: var(--mainColor);
 display:flex;
 justify-content: center;
 flex-direction:column;
-font-size: 14px;
+font-size: 12px;
 line-height: 1.5;
 margin-bottom: 20px;
 @media screen and (min-width: 778px) {
-font-size: 18px;
+font-size: 16px;
   }
 `;
 

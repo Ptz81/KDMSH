@@ -1,7 +1,5 @@
 import { Outlet } from "react-router-dom";
 import { Container, Header, Link, StyledHeader, LogoLink, LogoSpan, NavList, NavContainer, LogoContainer } from "./SharedLayout.styled.js";
-// import { GiGClef } from "react-icons/gi";
-// import { IconContext } from "react-icons";
 import { FooterPage } from "../pages/Footer/Footer.jsx";
 import { useEffect, useState } from "react";
 import MenuForMobile from "../MobileMenu/MobileMenu.jsx";
@@ -53,12 +51,7 @@ export const SharedLayout = () => {
       <Header>
         <LogoLink to="/" end>
         <LogoContainer>
-        {/* <IconContext.Provider value={{ color: "#ff4d4d", size: '1.5em', className: "global-class-name" }}>
-        <span role="img" aria-label="music icon">
-        <GiGClef/>
-            </span>{""}  
-          </IconContext.Provider> */}
-            <img src={iconLogo} alt="logo"/>
+            <img src={iconLogo} width={"24px"} height={"24px"} alt="logo"/>
             <LogoSpan>КДМШ №22</LogoSpan>
           </LogoContainer>
         </LogoLink>

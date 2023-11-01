@@ -12,6 +12,8 @@ const FilterContainer = styled.div`
   align-items: center;
   gap: 14px;
   margin-bottom: 20px;
+  color: var(--lightGray);
+        font-size: 14px;
 
   @media only screen and (min-width: 1200px) {
     flex-direction: row;
@@ -19,8 +21,7 @@ const FilterContainer = styled.div`
     margin-bottom: 30px;
   }
 `;
-
-const NavMenu = ({ setFilteredCards, data }) => {
+const NavMenu = ({ setFilter, onFilterChange, data }) => {
   const [department, setDepartment] = useState("Виберіть відділ");
   const [uniqueDepartments, setUniqueDepartments] = useState([]);
   const [uniqueName, setUniqueName] = useState([]);
@@ -35,22 +36,24 @@ const NavMenu = ({ setFilteredCards, data }) => {
     );
     const names = Array.from(new Set(data.map((item) => item.name))
     );
-    setUniqueDepartments(["Виберіть відділ", ...departments]);
-    setUniqueName(["Пошук за прізвищем", ...names]);
-    setUniquePosition(["Пошук за посадою", ...positions]);
+setUniqueDepartments(["Виберіть відділ", ...departments]);
+setUniqueName(["Пошук за прізвищем", ...names]);
+setUniquePosition(["Пошук за посадою", ...positions]);
   }, [data]);
 
   const handleSearchClick = () => {
-    const filteredCards = data.filter((card) => {
-      const isDepartmentMatch = department === "Виберіть відділ" || card.department === department;
-      const isNameMatch = uniqueName.includes(card.name);
-      const isPositionMatch = uniquePosition.includes(card.title);
+  const filteredCards = data.filter((card) => {
+    const isDepartmentMatch = department === "Виберіть відділ" || card.department === department;
+    console.log(isDepartmentMatch)
+    const isNameMatch = uniqueName.includes(card.name);
+    const isPositionMatch = uniquePosition.includes(card.title);
+    return isDepartmentMatch && isNameMatch && isPositionMatch;
+  });
 
-      return isDepartmentMatch && isNameMatch && isPositionMatch;
-    });
+    setFilter(filteredCards);
+    console.log(filteredCards)
+};
 
-    setFilteredCards(filteredCards);
-  };
 
   return (
     <FilterContainer>
@@ -62,28 +65,30 @@ const NavMenu = ({ setFilteredCards, data }) => {
         placeholder="Виберіть відділ"
       />
 
-      {/* <div style={{ display: "flex", alignItems: "center", marginLeft: "18px" }}> */}
         <InputFilter
-          options={uniqueName}
+        options={uniqueName}
+         onFilterChange={onFilterChange} 
           inputStyle="active"
           placeholder="Пошук за прізвищем"
-          name="nameFilter"
+          name="name"
         />
         <InputFilter
-          options={uniquePosition}
+        options={uniquePosition}
+         onFilterChange={onFilterChange} 
           inputStyle="active"
           placeholder="Пошук за посадою"
-          name="positionFilter"
+          name="position"
         />
-      {/* </div> */}
       <Button style={{ margin: "0px" }} onClick={handleSearchClick}>Пошук</Button>
     </FilterContainer>
   );
 };
 
 NavMenu.propTypes = {
-  setFilteredCards: PropTypes.func.isRequired,
+  departments: PropTypes.string.isRequired,
+  setFilter: PropTypes.func.isRequired,
   data: PropTypes.array.isRequired, 
+  onFilterChange: PropTypes.func.isRequired,
 };
 
 export default NavMenu;

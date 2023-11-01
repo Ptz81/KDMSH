@@ -25,7 +25,7 @@ export const Header = styled.header`
   }
 `;
 export const LogoSpan = styled.span`
-margin-left: 10px;
+/* margin-left: 3px; */
 font-family: 'Marck Script', cursive;
 line-height: 1.5em;
 color: var(--semiAccentColor);

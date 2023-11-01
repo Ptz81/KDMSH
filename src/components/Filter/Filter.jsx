@@ -13,7 +13,7 @@ width: 100%;
 const inputPrimary = styled.input`
 box-sizing: border-box;
 width: 100%;
-  padding: 14px 22px;
+  padding: 14px 25px;
   /* padding-left:200px; */
   border: 1px solid var(--semiAccentColor);
   /* border-right: 1px solid var(--semiAccentColor); */
@@ -34,8 +34,8 @@ width: 100%;
      
     }
   ::placeholder{
-        color: var(--lightGray);
-        font-size: 14px;
+        /* color: var(--lightGray);
+        font-size: 14px; */
         @media only screen and (min-width: 1200px){
     padding: 14px ;
     font-size: 14px;
@@ -71,7 +71,6 @@ border-left: 1px solid var(--semiAccentColor);
     padding-left: 200px;
   }
 `
-
 export const InputFilter = ({ value, onFilterChange, inputStyle, placeholder }) => {
   let InputComponent;
   if (inputStyle === 'active') {
@@ -82,22 +81,46 @@ export const InputFilter = ({ value, onFilterChange, inputStyle, placeholder }) 
 
   return (
     <InputContainer>
-
       <InputComponent
         type="text"
         name="text"
         placeholder={placeholder}
         value={value}
-        onChange={(e) => onFilterChange(e.target.value.replace(/\D/g, "")
-      .replace(/\B(?=(\d{3})+(?!\d))/g, ","))} 
+        onChange={(e) => onFilterChange(e.target.value)}
       />
     </InputContainer>
   );
 };
 
+// export const InputFilter = ({ value, onFilterChange, inputStyle, placeholder }) => {
+//   let InputComponent;
+//   if (inputStyle === 'active') {
+//     InputComponent = inputPrimary;
+//   } else if (inputStyle === 'secondary') {
+//     InputComponent = inputSecondary;
+//   }
+//   const handleChange = (e) => {
+//     const newValue = e.target.value;
+//     onFilterChange(newValue);
+//   };
+//   return (
+//     <InputContainer>
+
+//       <InputComponent
+//         type="text"
+//         name="text"
+//         placeholder={placeholder}
+//         value={value}
+//         // onChange={(e) => onFilterChange(e.target.value)}
+//      onChange={handleChange} 
+//       />
+//     </InputContainer>
+//   );
+// };
+
 InputFilter.propTypes = {
   value: PropTypes.string,
   inputStyle: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
-  onFilterChange: PropTypes.func.isRequired,
+   onFilterChange: PropTypes.func.isRequired, 
 };

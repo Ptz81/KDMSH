@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Container = styled.div`
      width:100%;
     /* margin-bottom: 100px; */
-    min-height: 700px;
+    /* min-height: 700px; */
 `;
 
 export const CardWrapper = styled.ul`
