@@ -117,53 +117,29 @@
 //   );
 // };
 
-
+import PropTypes from 'prop-types';
 import { MainTitle, SectionComponent } from "./Home.styled";
 import { cardsData } from '../data/CardData.json';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import CardList from "../Pagination/CardList";
 import NavMenu from "../NavMenu/NavMenu";
 
 export const Team = () => {
-  const [filter, setFilter] = useState("");
+  // const [filter, setFilter] = useState("");
   const [filteredData, setFilteredData] = useState(cardsData);
 
-  const handleFilterChange = (e) => {
-    setFilter(e.target.value);
+  const handleFilterChange = (filteredData) => {
+    setFilteredData(filteredData);
   };
 
-  const resetFilters = () => {
-    setFilter("");
-    setFilteredData(cardsData);
-  };
-
-  useEffect(() => {
-  if (filter === "") {
-    setFilteredData(cardsData);
-  } else {
-    const filteredCards = cardsData.filter((card) => {
-      const isNameMatch = card.name.includes(filter); 
-      const isPositionMatch = card.title.includes(filter); 
-      const isDepartmentMatch = card.department === filter; 
-      return isNameMatch || isPositionMatch || isDepartmentMatch;
-    });
-    setFilteredData(filteredCards);
-  }
-}, [filter]);
-
+ 
 
   return (
     <SectionComponent>
       <MainTitle>
         Викладацький склад
       </MainTitle>
-      <NavMenu
-          setFilter={setFilter}
-  data={filteredData}
-  onFilterChange={handleFilterChange}
-  onChange={handleFilterChange}
-      />
-      <button onClick={resetFilters}>Скинути фільтри</button>
+       <NavMenu  onFilterChange={handleFilterChange} data={filteredData} />
       <CardList items={filteredData} />
     </SectionComponent>
   );
@@ -221,8 +197,8 @@ export const Team = () => {
 //   );
 // };
 
-// Team.propTypes = {
-//   data: PropTypes.array,
-// };
+Team.propTypes = {
+  data: PropTypes.array,
+};
 
 // export default Team;

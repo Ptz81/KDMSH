@@ -24,10 +24,11 @@ const CardList = ({ items }) => {
     };
   }, []);
 
-  const handleChangePage = (newPage) => {
+const handleChangePage = (newPage) => {
+  if (currentPage !== newPage) { 
     setCurrentPage(newPage);
-  };
-
+  }
+}
   return (
     <>
      <List>
@@ -46,7 +47,7 @@ const CardList = ({ items }) => {
 };
 
 CardList.propTypes = {
-  items: PropTypes.array,
+  items: PropTypes.array.isRequired,
 };
 
 export default CardList;
