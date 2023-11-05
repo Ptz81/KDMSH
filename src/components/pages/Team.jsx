@@ -140,7 +140,7 @@ export const Team = () => {
         Викладацький склад
       </MainTitle>
        <NavMenu  onFilterChange={handleFilterChange} data={filteredData} />
-      <CardList items={filteredData} />
+      <CardList data={filteredData} />
     </SectionComponent>
   );
 };

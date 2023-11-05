@@ -4,7 +4,7 @@ import { List, ContainerBtnPagination } from './CardList.styled.js';
 import Pagination from './Pagination.jsx';
 import Cards from '../UI/Card/Card.jsx';
 
-const CardList = ({ items }) => {
+const CardList = ({ data }) => {
   const [contentPerPage, setContentPerPage] = useState(16);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -23,21 +23,23 @@ const CardList = ({ items }) => {
       window.removeEventListener('resize', changeNumberItems);
     };
   }, []);
-
 const handleChangePage = (newPage) => {
-  if (currentPage !== newPage) { 
-    setCurrentPage(newPage);
-  }
+  setCurrentPage(newPage);
 }
+// const handleChangePage = (newPage) => {
+//   if (currentPage !== newPage) { 
+//     setCurrentPage(newPage);
+//   }
+// }
   return (
     <>
      <List>
-        <Cards items={items.slice((currentPage - 1) * contentPerPage, currentPage * contentPerPage)} />
+        <Cards data={data.slice((currentPage - 1) * contentPerPage, currentPage * contentPerPage)} />
       </List>
       <ContainerBtnPagination>
         <Pagination
           currentPage={currentPage}
-          totalPages={Math.ceil(items.length / contentPerPage)}
+          totalPages={Math.ceil(data.length / contentPerPage)}
           onChangePage={handleChangePage}
           pageType="team"
         />
@@ -47,7 +49,7 @@ const handleChangePage = (newPage) => {
 };
 
 CardList.propTypes = {
-  items: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired,
 };
 
 export default CardList;

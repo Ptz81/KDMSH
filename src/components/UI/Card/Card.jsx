@@ -268,7 +268,7 @@ import Modal from "../../Modal/Modal.jsx";
 import CardsModal from "../CardModal/CardsModal";
 // import { cardsData } from "../../data/CardData.json";
 
-const Cards = ({ items }) => {
+const Cards = ({ data}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedCardData, setSelectedCardData] = useState(null);
 
@@ -299,7 +299,7 @@ const Cards = ({ items }) => {
 
   return (
     <Wrapper>
-      {items.map((card, index) => (
+      {data.map((card, index) => (
         <ContainerCard key={index}>
           {card.url ? (
             <ImageCard src={card.url} alt={`photo of ${card.name}`} />
@@ -334,7 +334,7 @@ const Cards = ({ items }) => {
 };
 
 Cards.propTypes = {
-  items: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired,
 };
 
 export default Cards;
