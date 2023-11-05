@@ -21,22 +21,121 @@ const FilterContainer = styled.div`
     margin-bottom: 30px;
   }
 `;
+// const NavMenu = ({ onFilterChange, data }) => {
+//   const [originalData, setOriginalData] = useState(data);
+//   const [filters, setFilters] = useState({
+//     department: "Виберіть відділ",
+//     name: "Пошук за прізвищем",
+//     title: "Пошук за посадою",
+//   });
+
+//   const [uniqueDepartments, setUniqueDepartments] = useState([]);
+//   const [uniqueName, setUniqueName] = useState([]);
+//   const [uniqueTitle, setUniqueTitle] = useState([]);
+
+//   useEffect(() => {
+//     const departments = Array.from(new Set(originalData.map((item) => item.department)));
+// const titles = Array.from(new Set(originalData.map((item) => item.title)));
+// const names = Array.from(new Set(originalData.map((item) => item.name)));
+
+//     setUniqueDepartments(["Виберіть відділ", ...departments]);
+//     setUniqueName(["Пошук за прізвищем", ...names]);
+//     setUniqueTitle(["Пошук за посадою", ...titles]);
+//   }, [originalData]);
+
+//   const handleSearchClick = () => {
+//     const filterOptions = {
+//       department: filters.department,
+//       name: filters.name !== "Пошук за прізвищем" ? filters.name.toLowerCase() : "",
+//       title: filters.title !== "Пошук за посадою" ? filters.title.toLowerCase() : "",
+//     };
+//     const filteredCards = originalData.filter((card) => {
+//       const isDepartmentMatch = filterOptions.department === "Виберіть відділ" || card.department === filters.department;
+//       const isNameMatch = filterOptions.name === "" || card.name.toLowerCase().includes(filters.name);
+      
+//       const isPositionMatch = filterOptions.title === "" || card.title.toLowerCase().includes(filters.title);
+      
+//       return isDepartmentMatch && isNameMatch && isPositionMatch;
+//     });
+
+//     onFilterChange(filteredCards);
+
+//     setFilters({
+//       department: "Виберіть відділ",
+//       name: "Пошук за прізвищем",
+//       title: "Пошук за посадою",
+//     });
+//   };
+
+//   const handleInputChange = (name, value) => {
+//     setFilters({
+//       ...filters,
+//       [name]: value,
+//     });
+//   };
+//   return (
+//     <FilterContainer>
+//       <CustomSelectComponent
+//         key={data.id}
+//         options={uniqueDepartments}
+//         value={filters.department}
+//         onChange={(value) => handleInputChange('department', value)}
+//         placeholder="Виберіть відділ"
+//         onFilterChange={(value) => handleInputChange('department', value)}
+//       />
+
+//       <InputFilter
+//         options={uniqueName}
+//         // onChange={(e) => setInputValue(e.target.value)}
+//         onFilterChange={(value) => handleInputChange('name', value)}
+//         inputStyle="active"
+//         placeholder="Пошук за прізвищем"
+//         name="name"
+//       />
+//       <InputFilter
+//         options={uniqueTitle}
+//         // onChange={(e) => setInputValue(e.target.value)}
+//         onFilterChange={(value) => handleInputChange('title', value)}
+//         inputStyle="active"
+//         placeholder="Пошук за посадою"
+//         name="title"
+//       />
+//       <Button style={{ margin: "0px" }}
+//         onClick={handleSearchClick}>Пошук</Button>
+//     </FilterContainer>
+//   );
+// };
+
+
 const NavMenu = ({ onFilterChange, data }) => {
   const [originalData, setOriginalData] = useState(data);
-  const [filters, setFilters] = useState({
-    department: "Виберіть відділ",
-    name: "Пошук за прізвищем",
-    title: "Пошук за посадою",
-  });
+  // const [filters, setFilters] = useState({
+  //   department: "Виберіть відділ",
+  //   name: "Пошук за прізвищем",
+  //   title: "Пошук за посадою",
+  // });
 
   const [uniqueDepartments, setUniqueDepartments] = useState([]);
   const [uniqueName, setUniqueName] = useState([]);
   const [uniqueTitle, setUniqueTitle] = useState([]);
 
+  const [selectedDepartment, setSelectedDepartment] = useState("Виберіть відділ");
+  const [inputName, setInputName] = useState("");
+  const [inputTitle, setInputTitle] = useState("");
+
+  // Встановлюємо значення за замовчуванням після завантаження компоненту
+  useEffect(() => {
+    setSelectedDepartment("Виберіть відділ");
+    setInputName("");
+    setInputTitle("");
+
+    // Оновлюємо унікальні значення тут якщо потрібно
+  }, []);
+
   useEffect(() => {
     const departments = Array.from(new Set(originalData.map((item) => item.department)));
-const titles = Array.from(new Set(originalData.map((item) => item.title)));
-const names = Array.from(new Set(originalData.map((item) => item.name)));
+    const titles = Array.from(new Set(originalData.map((item) => item.title)));
+    const names = Array.from(new Set(originalData.map((item) => item.name)));
 
     setUniqueDepartments(["Виберіть відділ", ...departments]);
     setUniqueName(["Пошук за прізвищем", ...names]);
@@ -45,69 +144,63 @@ const names = Array.from(new Set(originalData.map((item) => item.name)));
 
   const handleSearchClick = () => {
     const filterOptions = {
-      department: filters.department,
-      name: filters.name !== "Пошук за прізвищем" ? filters.name.toLowerCase() : "",
-      title: filters.title !== "Пошук за посадою" ? filters.title.toLowerCase() : "",
+      department: selectedDepartment,
+      name: inputName.toLowerCase(),
+      title: inputTitle.toLowerCase(),
     };
     const filteredCards = originalData.filter((card) => {
-      const isDepartmentMatch = filterOptions.department === "Виберіть відділ" || card.department === filters.department;
-      const isNameMatch = filterOptions.name === "" || card.name.toLowerCase().includes(filters.name);
-      
-      const isPositionMatch = filterOptions.title === "" || card.title.toLowerCase().includes(filters.title);
-      
+      const isDepartmentMatch = filterOptions.department === "Виберіть відділ" || card.department === selectedDepartment;
+      const isNameMatch = filterOptions.name === "" || card.name.toLowerCase().includes(inputName);
+      const isPositionMatch = filterOptions.title === "" || card.title.toLowerCase().includes(inputTitle);
       return isDepartmentMatch && isNameMatch && isPositionMatch;
     });
 
     onFilterChange(filteredCards);
 
-    setFilters({
-      department: "Виберіть відділ",
-      name: "Пошук за прізвищем",
-      title: "Пошук за посадою",
-    });
+    // setSelectedDepartment("Виберіть відділ");
+    setInputName("");
+    setInputTitle("");
   };
 
-  const handleInputChange = (name, value) => {
-    setFilters({
-      ...filters,
-      [name]: value,
-    });
-  };
   return (
     <FilterContainer>
       <CustomSelectComponent
         key={data.id}
         options={uniqueDepartments}
-        value={filters.department}
-        onChange={(value) => handleInputChange('department', value)}
+        value={selectedDepartment}
+        onChange={(value) => setSelectedDepartment(value)}
         placeholder="Виберіть відділ"
-        onFilterChange={(value) => handleInputChange('department', value)}
+        onFilterChange={(value) => setSelectedDepartment(value)}
       />
 
       <InputFilter
         options={uniqueName}
-        // onChange={(e) => setInputValue(e.target.value)}
-        onFilterChange={(value) => handleInputChange('name', value)}
+        value={inputName}
+        onFilterChange={(value) => setInputName(value)}
         inputStyle="active"
         placeholder="Пошук за прізвищем"
         name="name"
       />
       <InputFilter
         options={uniqueTitle}
-        // onChange={(e) => setInputValue(e.target.value)}
-        onFilterChange={(value) => handleInputChange('title', value)}
+        value={inputTitle}
+        onFilterChange={(value) => setInputTitle(value)}
         inputStyle="active"
         placeholder="Пошук за посадою"
         name="title"
       />
-      <Button style={{ margin: "0px" }}
-        onClick={handleSearchClick}>Пошук</Button>
+      <Button style={{ margin: "0px" }} onClick={handleSearchClick}>Пошук</Button>
     </FilterContainer>
   );
 };
 
+
+
+
+
+
 NavMenu.propTypes = {
-  setFilter: PropTypes.func,
+  // setFilter: PropTypes.func,
   data: PropTypes.array.isRequired,
   onFilterChange: PropTypes.func.isRequired,
 };
