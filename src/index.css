@@ -5,10 +5,12 @@
     src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
   font-family: 'Marck Script', cursive;
     src: url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+  font-family: 'Roboto Slab', serif;
+    src: url('https: //fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800&family=Roboto:wght@300;400&display=swap');
   }
-    /* @font-face {
-font-family: 'Marck Script', cursive;
-      src: url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+    /* font-face {
+font-family: 'Roboto Slab', serif;
+      src: url('https: //fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700;800&family=Roboto:wght@300;400&display=swap');
     } */
     --mainColor: #212121;
     --accentColor: #ff4d4d;
@@ -20,10 +22,11 @@ font-family: 'Marck Script', cursive;
     --lightGrey: #f2f2f2;
     --base:#fff5ed;
 
-  font-family: Montserrat, sans-serif;
+  /* font-family: Montserrat, sans-serif; */
+    font-family: 'Roboto Slab', serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 17px;
 
   color-scheme: light dark;
   color: #212121;
@@ -45,6 +48,7 @@ body {
   margin: 0;
   min-width: 320px;
   height: 100%;
+  font-family: 'Roboto Slab', serif;
 }
 body::after {
   content: "";

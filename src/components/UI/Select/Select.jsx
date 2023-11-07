@@ -27,7 +27,7 @@ const SelectButton = styled.button`
   @media only screen and (min-width: 1200px) {
     width: 100%;
     padding: 14px 10px 14px 18px;
-    font-size: 17px;
+    font-size: 13px;
     margin-bottom: 0;
   }
 `;

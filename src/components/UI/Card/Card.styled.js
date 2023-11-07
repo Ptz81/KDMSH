@@ -10,13 +10,14 @@ flex-wrap: wrap;
 `
 export const ContainerCard = styled.li`
   position: relative;
-  /* max-width: 250px; */
+  max-width: 250px;
   aspect-ratio: 16/9;
   background-color: var(--base);
   border-radius: 5px;
-  max-width: 230px;
+  /* max-width: 200px; */
+  height: 150px;
   flex-grow: 1;
-  flex-basis: 250px;
+  flex-basis: 200px;
   overflow: hidden;
   box-shadow: 0 0 0 2px #e86969;
   transition: all 1.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);

@@ -13,7 +13,7 @@
       "section": "Team"
     },
     {
-      "url": "https://i.ibb.co/KxJcy9Z/Yehor.jpg",
+      "url": "https://i.ibb.co/CnWqZnT/Yehor.jpg",
       "name": "Єгор Куриленко",
       "title": "Викладач",
       "experience": "2019",
@@ -25,7 +25,7 @@
       "section": "Team"
     },
     {
-      "url": "https://i.ibb.co/XxjsWyk/women.png",
+      "url": "https://i.ibb.co/8gML0SL/image.jpg",
       "name": "Нона Козлова",
       "title": "Заввідділом, Викладач",
       "experience": "1972",
@@ -49,7 +49,7 @@
       "section": "Team"
     },
     {
-      "url": "https://i.ibb.co/YjbDdJ1/Lyubov.jpg",
+      "url": "https://i.ibb.co/QHZNNTN/image.jpg",
       "name": "Любов Герасимчук",
       "title": "Директор, Викладач",
       "experience": "1972",
@@ -85,7 +85,7 @@
       "section": "Management"
     },
     {
-      "url": "https://i.ibb.co/DG1ZYY4/Halyna.jpg",
+      "url": "https://i.ibb.co/236357H/8-S7-A9117-min.jpg",
       "name": "Галина Головацька-Гуль",
       "title": "Заввідділом, Викладач",
       "experience": "1999",
@@ -102,6 +102,18 @@
       "title": "Викладач",
       "experience": "1992",
       "band":"Ансамбль гітаристів",
+      "department":"Відділ народних інструментів",
+      "instrument":"Гітара",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Team"
+    },
+    {
+      "url": "https://i.ibb.co/yR78MF6/Daniil.jpg",
+      "name": "Даниїл Голубєв",
+      "title": "Викладач",
+      "experience": "",
+      "band":"Оркестр народної музики 'Барвисті Візерунки'",
       "department":"Відділ народних інструментів",
       "instrument":"Гітара",
       "phone": "+380934139512",

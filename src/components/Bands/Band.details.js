@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const WrapperDepart = styled.div`
     display: block;
   position: relative;
+  font-size: 12px;
   max-width: auto;
   max-height: 600px;
   backdrop-filter: blur(10px);

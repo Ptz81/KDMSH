@@ -8,11 +8,13 @@ export const CardDescription = styled.div`
   flex-direction: column;
   background-color: var(--base);
   color: var(--mainColor);
-  height: 30%;
+  height: 40%;
    width: 100%;
   bottom: 0;
   border-radius: 10px;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  line-height: normal;
+  padding-top: 10px;
   /* padding: 1rem; */
 `
 export const IconCard = styled.svg`
@@ -25,7 +27,7 @@ export const IconCard = styled.svg`
 
 export const CardContainer = styled.div`
   height: 220px;
- max-width: 200px;
+ max-width: 180px;
  margin-bottom: 10px;
   flex-grow: 1;
   flex-basis: 190px;
@@ -47,8 +49,8 @@ export const CardImage = styled.img`
   position: absolute;
   object-fit: cover;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  background: #0a3394;
-  background: linear-gradient(to top, #0a3394, #4286f4);
+  background: var(--base);
+  /* background: linear-gradient(to top, #0a3394, #4286f4); */
 `
 
 
