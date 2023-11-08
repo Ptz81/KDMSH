@@ -17,7 +17,7 @@ const Carousel = ({ data }) => {
   return (
     <CarouselWrapper>
       <LeftArrow onClick={prevSlide}>
-        <BsArrowLeftCircleFill style={{width:"1.5em", height:"1.5em", fill:"wheat"}}/>
+        <BsArrowLeftCircleFill style={{width:"2.5em", height:"2.5em", fill:"wheat"}}/>
       </LeftArrow>
       {data.map((item, idx) => (
         <Slide
@@ -28,7 +28,7 @@ const Carousel = ({ data }) => {
         />
       ))}
       <RightArrow onClick={nextSlide}>
-        <BsArrowRightCircleFill style={{width:"1.5em", height:"1.5em", fill:"wheat"}}/>
+        <BsArrowRightCircleFill style={{width:"2.5em", height:"2.5em", fill:"wheat"}}/>
       </RightArrow>
       <Indicators>
         {data.map((_, idx) => (

@@ -48,7 +48,12 @@ font-size: 40px;
 		fill: rgba(255,77,77,1); stroke: rgba(255,77,77,0);
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
 	}
+
+	
 }
+@media screen and (max-width: 480px) {
+height: 50px;
+  }
 `;
 
 export const MainSection = styled.div`
@@ -65,11 +70,23 @@ max-width: 1200px;
 font-size: 18px;
 line-height:150%;
 min-height: 500px;
+
 @media screen and (min-width: 778px) {
 min-height: 700px;
   }
 `;
+export const HomeComponent = styled.div`
+margin-left: auto;
+margin-right: auto;
+padding:10px;
 
+`
+export const ArticleText = styled.p`
+font-size: 24px;
+@media screen and (max-width: 480px) {
+font-size: 18px;
+  }
+`
 export const MainTitle = styled.h3`
 color: var(--accentColor);
 font-weight: bold;

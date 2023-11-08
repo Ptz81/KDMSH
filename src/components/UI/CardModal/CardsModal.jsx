@@ -14,12 +14,12 @@ import { Button, ButtonTitle } from "../Button/Button.styled.js";
 import { Link } from "react-router-dom";
 
 
-const CardsModal = ({name, title, img, description, experience, band, department }) => {
+const CardsModal = ({name, title, img, description, instrument, band, department }) => {
     // const handlePhoneCall = () => {
     // window.location.href = `tel:${phone}`;
     // };
-  const currentYear = new Date().getFullYear();
-   const yearsOfExperience = currentYear - experience;
+  // const currentYear = new Date().getFullYear();
+  //  const yearsOfExperience = currentYear - experience;
   return (
     <Wrapper>
       <ContainerCard>
@@ -38,7 +38,7 @@ const CardsModal = ({name, title, img, description, experience, band, department
         <Name>{name}</Name>
         <Title>{title}:<TitleSpan>{department}</TitleSpan></Title>
         <About>{description}</About>
-        <Experience><TextSpan>Стаж:</TextSpan>{ yearsOfExperience}р.</Experience>
+        <Experience><TextSpan>Інструмент:</TextSpan>{ instrument}</Experience>
         <Text><TextSpan>Колективи:</TextSpan>{band}</Text>
         <CardWrapper>
            <Link to='https://forms.gle/PVcbo8fZEWQrJm4G8' target="_blank">
@@ -62,7 +62,7 @@ CardsModal.propTypes = {
   phone: PropTypes.string,
   img: PropTypes.string,
   description: PropTypes.string,
-  experience: PropTypes.string,
+  instrument: PropTypes.string,
   band: PropTypes.string,
   department: PropTypes.string,
 };

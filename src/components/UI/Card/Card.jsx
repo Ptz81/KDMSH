@@ -323,7 +323,7 @@ const Cards = ({ data}) => {
             description={selectedCardData.description}
             phone={selectedCardData.phone}
             img={selectedCardData.url}
-            experience={selectedCardData.experience}
+            instrument={selectedCardData.instrument}
             band={selectedCardData.band}
             department={selectedCardData.department}
           />

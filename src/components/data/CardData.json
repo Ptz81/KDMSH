@@ -24,18 +24,7 @@
       "description":"Lorem ipsum dolor sit amet, consectetur",
       "section": "Team"
     },
-    {
-      "url": "https://i.ibb.co/8gML0SL/image.jpg",
-      "name": "Нона Козлова",
-      "title": "Заввідділом, Викладач",
-      "experience": "1972",
-      "band":"Дует 'НоТа'",
-      "department":"Фортепіанний відділ №2",
-      "instrument":"Фортепіано",
-      "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur",
-    "section": "Management"
-    },
+    
     {
       "url": "https://i.ibb.co/W5bMjKK/Serhiy.jpg",
       "name": "Сергій Левчук",
@@ -68,6 +57,18 @@
       "band":"",
       "department":"Відділ народних інструментів",
       "instrument":"Бандура",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+      "section": "Management"
+    },
+    {
+      "url": "https://i.ibb.co/pRyX9gZ/image.jpg",
+      "name": "Олександра Снігур",
+      "title": "Директор з виховної роботи, Викладач",
+      "experience": "2021",
+      "band":"",
+      "department":"Фортепіанний відділ",
+      "instrument":"Фортепіано",
       "phone": "+380934139512",
       "description":"Lorem ipsum dolor sit amet, consectetur",
       "section": "Management"
@@ -119,18 +120,6 @@
       "phone": "+380934139512",
       "description":"Lorem ipsum dolor sit amet, consectetur",
       "section": "Team"
-    },
-    {
-      "url": "https://i.ibb.co/pRyX9gZ/image.jpg",
-      "name": "Олександра Снігур",
-      "title": "Директор з виховної роботи, Викладач",
-      "experience": "2021",
-      "band":"",
-      "department":"Фортепіанний відділ",
-      "instrument":"Фортепіано",
-      "phone": "+380934139512",
-      "description":"Lorem ipsum dolor sit amet, consectetur",
-      "section": "Management"
     },
     {
       "url": "https://i.ibb.co/CQ0FgZs/image.jpg",
@@ -263,6 +252,18 @@
       "phone": "+380934139512",
       "description":"Lorem ipsum dolor sit amet, consectetur",
       "section": "Team"
+    },
+    {
+      "url": "https://i.ibb.co/8gML0SL/image.jpg",
+      "name": "Нона Козлова",
+      "title": "Заввідділом, Викладач",
+      "experience": "1972",
+      "band":"Дует 'НоТа'",
+      "department":"Фортепіанний відділ №2",
+      "instrument":"Фортепіано",
+      "phone": "+380934139512",
+      "description":"Lorem ipsum dolor sit amet, consectetur",
+    "section": "Management"
     }
   ]
 }

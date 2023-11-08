@@ -29,16 +29,16 @@ export const Arrow = styled.div`
   filter: drop-shadow(0px 0px 5px #555);
   width: 2rem;
   height: 2rem;
-  color: #212121;
+  color: var(--accentColor);
   cursor: pointer;
 `;
 
 export const LeftArrow = styled(Arrow)`
-  left: 1rem;
+  left: 0.5rem;
 `;
 
 export const RightArrow = styled(Arrow)`
-  right: 0rem;
+  right: 1rem;
 `;
 
 export const Indicators = styled.div`
