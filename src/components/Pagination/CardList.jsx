@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { List, ContainerBtnPagination } from './CardList.styled.js';
 import Pagination from './Pagination.jsx';
 import Cards from '../UI/Card/Card.jsx';
+import { Section } from '../pages/Home.styled.js';
 
 function debounce(func, wait) {
   let timeout;
@@ -13,7 +14,7 @@ function debounce(func, wait) {
     };
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-  };
+  }(); 
 }
 
 const CardList = ({ data }) => {
@@ -29,10 +30,9 @@ const CardList = ({ data }) => {
   };
 
   useEffect(() => {
-    // Використовуємо debounce для обробки події resize
     const handleResize = debounce(changeNumberItems, 200);
 
-    changeNumberItems(); // Викликаємо функцію спочатку
+    changeNumberItems(); 
 
     window.addEventListener('resize', handleResize);
     return () => {
@@ -55,7 +55,7 @@ const CardList = ({ data }) => {
 // }
 
   return (
-    <>
+    <Section>
      <List>
         <Cards data={data.slice((currentPage - 1) * contentPerPage, currentPage * contentPerPage)} />
       </List>
@@ -67,7 +67,7 @@ const CardList = ({ data }) => {
           pageType="team"
         />
       </ContainerBtnPagination>
-    </>
+    </Section>
   );
 };
 

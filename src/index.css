@@ -49,6 +49,7 @@ body {
   min-width: 320px;
   height: 100%;
   font-family: 'Roboto Slab', serif;
+  overflow: auto;
 }
 body::after {
   content: "";
