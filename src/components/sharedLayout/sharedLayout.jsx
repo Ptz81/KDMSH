@@ -11,7 +11,8 @@ import logo from '../Images/logo.svg';
 export const SharedLayout = () => {
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const iconLogo = logo;
-   useEffect(() => {
+   
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         <StyledHeader style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}/>;

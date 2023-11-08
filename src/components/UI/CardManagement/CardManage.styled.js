@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const CardDescription = styled.div`
  display: flex;
   position: absolute;
-  gap: 0.4em;
+  gap: 0.3em;
   flex-direction: column;
   background-color: var(--base);
   color: var(--mainColor);
@@ -28,7 +28,8 @@ export const IconCard = styled.svg`
 export const CardContainer = styled.div`
   height: 220px;
  max-width: 180px;
- margin-bottom: 10px;
+ margin-bottom: 20px;
+
   flex-grow: 1;
   flex-basis: 190px;
   position: relative;
@@ -55,12 +56,12 @@ export const CardImage = styled.img`
 
 
 export const CardTitle = styled.p`
-font-size: 1rem;
+font-size: 0.8rem;
   font-weight: 700;
   text-align: center;
 `
 export const CardText = styled.p`
-font-size: 0.8rem;
+font-size: 0.7rem;
   line-height: 100%;
   text-align: center;
 `

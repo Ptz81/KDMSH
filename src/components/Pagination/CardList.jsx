@@ -4,33 +4,56 @@ import { List, ContainerBtnPagination } from './CardList.styled.js';
 import Pagination from './Pagination.jsx';
 import Cards from '../UI/Card/Card.jsx';
 
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      timeout = null;
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
 const CardList = ({ data }) => {
   const [contentPerPage, setContentPerPage] = useState(15);
   const [currentPage, setCurrentPage] = useState(1);
 
-  useEffect(() => {
-    const changeNumberItems = () => {
-      if (window.innerWidth > 778) {
-        setContentPerPage(15);
-      } else {
-        setContentPerPage(6);
-      }
-    };
-    changeNumberItems();
+  const changeNumberItems = () => {
+    if (window.innerWidth > 778) {
+      setContentPerPage(15);
+    } else {
+      setContentPerPage(6);
+    }
+  };
 
-    window.addEventListener('resize', changeNumberItems);
+  useEffect(() => {
+    // Використовуємо debounce для обробки події resize
+    const handleResize = debounce(changeNumberItems, 200);
+
+    changeNumberItems(); // Викликаємо функцію спочатку
+
+    window.addEventListener('resize', handleResize);
     return () => {
-      window.removeEventListener('resize', changeNumberItems);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
-const handleChangePage = (newPage) => {
-  setCurrentPage(newPage);
-}
+
+  const handleChangePage = (newPage) => {
+    setCurrentPage(newPage);
+  }
+//     changeNumberItems();
+
+//     window.addEventListener('resize', changeNumberItems);
+//     return () => {
+//       window.removeEventListener('resize', changeNumberItems);
+//     };
+//   }, []);
 // const handleChangePage = (newPage) => {
-//   if (currentPage !== newPage) { 
-//     setCurrentPage(newPage);
-//   }
+//   setCurrentPage(newPage);
 // }
+
   return (
     <>
      <List>
