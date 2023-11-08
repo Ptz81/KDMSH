@@ -31,7 +31,7 @@ font-size: 40px;
 	stroke: var(--accentColor);
   fill: #fff5ed;
   font-family: 'Marck Script';
-	font-size: 5vw;
+	font-size: 4vw;
   text-align: center;
   @media screen and (min-width: 1200px) {
       font-size: 60px; 
@@ -70,6 +70,7 @@ max-width: 1200px;
 font-size: 18px;
 line-height:150%;
 min-height: 500px;
+overflow: auto;
 
 @media screen and (min-width: 778px) {
 min-height: 700px;
@@ -82,9 +83,11 @@ padding:10px;
 
 `
 export const ArticleText = styled.p`
-font-size: 24px;
-@media screen and (max-width: 480px) {
 font-size: 18px;
+line-height: 1.2;
+font-family: 'Roboto Slab', serif;
+@media screen and (max-width: 480px) {
+font-size: 14px;
   }
 `
 export const MainTitle = styled.h3`
