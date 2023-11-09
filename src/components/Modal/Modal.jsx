@@ -20,28 +20,28 @@ const ModalOverlay = styled.div`
 
 const ModalContent = styled.div`
   background-color: #fff;
-  width: 400px;
+  max-width: 400px;
   position: relative;
   padding: 20px;
   margin: 10px;
   overflow-y: auto;
-  border-radius: 12px;
-   @media screen and (min-width: 768px) {
-  margin: 0;
-  width: 540px;
   border-radius: 24px;
-  }
+   /* @media screen and (min-width: 768px) {
+  margin: 0;
+  width: 400px;
+  border-radius: 24px;
+  } */
 `;
 
 const CloseButton = styled.div`
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
-   @media screen and (min-width: 768px) {
+   /* @media screen and (min-width: 768px) {
  top: 15px;
   right: 15px;
-  }
+  } */
 `;
 
 const Modal = ({ isOpen, closeModal, children}) => {

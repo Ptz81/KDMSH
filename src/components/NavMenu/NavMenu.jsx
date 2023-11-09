@@ -108,13 +108,7 @@ const FilterContainer = styled.div`
 
 
 const NavMenu = ({ onFilterChange, data }) => {
-  const [originalData, setOriginalData] = useState(data);
-  // const [filters, setFilters] = useState({
-  //   department: "Виберіть відділ",
-  //   name: "Пошук за прізвищем",
-  //   title: "Пошук за посадою",
-  // });
-
+  const [originalData, ] = useState(data);
   const [uniqueDepartments, setUniqueDepartments] = useState([]);
   const [uniqueName, setUniqueName] = useState([]);
   const [uniqueTitle, setUniqueTitle] = useState([]);
@@ -123,13 +117,10 @@ const NavMenu = ({ onFilterChange, data }) => {
   const [inputName, setInputName] = useState("");
   const [inputTitle, setInputTitle] = useState("");
 
-  // Встановлюємо значення за замовчуванням після завантаження компоненту
   useEffect(() => {
     setSelectedDepartment("Виберіть відділ");
     setInputName("");
     setInputTitle("");
-
-    // Оновлюємо унікальні значення тут якщо потрібно
   }, []);
 
   useEffect(() => {
@@ -143,24 +134,27 @@ const NavMenu = ({ onFilterChange, data }) => {
   }, [originalData]);
 
   const handleSearchClick = () => {
-    const filterOptions = {
-      department: selectedDepartment,
-      name: inputName.toLowerCase(),
-      title: inputTitle.toLowerCase(),
-    };
-    const filteredCards = originalData.filter((card) => {
-      const isDepartmentMatch = filterOptions.department === "Виберіть відділ" || card.department === selectedDepartment;
-      const isNameMatch = filterOptions.name === "" || card.name.toLowerCase().includes(inputName);
-      const isPositionMatch = filterOptions.title === "" || card.title.toLowerCase().includes(inputTitle);
-      return isDepartmentMatch && isNameMatch && isPositionMatch;
-    });
-
-    onFilterChange(filteredCards);
-
-    // setSelectedDepartment("Виберіть відділ");
-    setInputName("");
-    setInputTitle("");
+  const filterOptions = {
+    department: selectedDepartment.toLowerCase(),
+    name: inputName.toLowerCase(),
+    title: inputTitle.toLowerCase(),
   };
+
+  const filteredCards = originalData.filter((card) => {
+    const isDepartmentMatch = filterOptions.department === "виберіть відділ" || card.department.toLowerCase() === filterOptions.department;
+    const isNameMatch = filterOptions.name === "" || card.name.toLowerCase().includes(filterOptions.name);
+    const isPositionMatch = filterOptions.title === "" || card.title.toLowerCase().includes(filterOptions.title);
+
+    return isDepartmentMatch && isNameMatch && isPositionMatch;
+  });
+
+  onFilterChange(filteredCards);
+
+  setSelectedDepartment("Виберіть відділ");
+  setInputName("");
+  setInputTitle("");
+};
+
 
   return (
     <FilterContainer>

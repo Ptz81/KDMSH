@@ -19,14 +19,16 @@ border-radius: 15px;
 `
 
 export const TitleComponent = styled.div`
-/* margin-top: 20px; */
+margin-top: 30px;
+height: 70px;
 svg {
 	width: 100%; height: 100%;
 }
 svg text {
-font-size: 40px; 
+/* font-size: 40px;  */
 	animation: stroke 5s infinite alternate;
   animation-delay: 3s;
+  letter-spacing: 1.5px;
 	stroke-width: 2;
 	stroke: var(--accentColor);
   fill: #fff5ed;
@@ -40,10 +42,10 @@ font-size: 40px;
 @keyframes stroke {
 	0%   {
 		fill: rgba(255,77,77,0); stroke: rgba(255,77,77,1);
-		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
 	}
 	70%  {fill: rgba(255,77,77,0); stroke: rgba(255,77,77,1); }
-	80%  {fill: rgba(255,77,77,0); stroke: rgba(255,77,77,1); stroke-width: 3; }
+	80%  {fill: rgba(255,77,77,0); stroke: rgba(255,77,77,1); stroke-width: 1; }
 	100% {
 		fill: rgba(255,77,77,1); stroke: rgba(255,77,77,0);
 		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;

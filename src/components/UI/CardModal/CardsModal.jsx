@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { CardWrapper, Experience, TextSpan, TitleSpan } from "./CardsModal.styled.js";
+import { Experience, TextSpan, TitleSpan } from "./CardsModal.styled.js";
 import { Wrapper } from "./CardsModal.styled.js";
 import { ContainerCard } from "./CardsModal.styled.js";
 import { Image } from "./CardsModal.styled.js";
@@ -8,13 +8,13 @@ import { CardIcon } from "./CardsModal.styled.js";
 import { Info } from "./CardsModal.styled.js";
 import { Name } from "./CardsModal.styled.js";
 import { Title } from "./CardsModal.styled.js";
-import { About } from "./CardsModal.styled.js";
+// import { About } from "./CardsModal.styled.js";
 import { Text } from "./CardsModal.styled.js";
-import { Button, ButtonTitle } from "../Button/Button.styled.js";
-import { Link } from "react-router-dom";
+// import { Button, ButtonTitle } from "../Button/Button.styled.js";
+// import { Link } from "react-router-dom";
 
 
-const CardsModal = ({name, title, img, description, instrument, band, department }) => {
+const CardsModal = ({ name, title, img, instrument, band, department }) => {
     // const handlePhoneCall = () => {
     // window.location.href = `tel:${phone}`;
     // };
@@ -36,17 +36,18 @@ const CardsModal = ({name, title, img, description, instrument, band, department
       </ContainerCard>
       <Info>
         <Name>{name}</Name>
-        <Title>{title}:<TitleSpan>{department}</TitleSpan></Title>
-        <About>{description}</About>
+        <Title>{title}</Title>
+        <TitleSpan>{department}</TitleSpan>
+        {/* <About>{description}</About> */}
         <Experience><TextSpan>Інструмент:</TextSpan>{ instrument}</Experience>
         <Text><TextSpan>Колективи:</TextSpan>{band}</Text>
-        <CardWrapper>
+        {/* <CardWrapper>
            <Link to='https://forms.gle/PVcbo8fZEWQrJm4G8' target="_blank">
             <Button>
               <ButtonTitle>Записатися</ButtonTitle>
           </Button>
           </Link>
-        </CardWrapper>
+        </CardWrapper> */}
          
       </Info>
     </Wrapper>
