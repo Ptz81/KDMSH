@@ -160,14 +160,14 @@
     {
       "url": "https://i.ibb.co/XxjsWyk/women.png",
       "name": "Галина Семенова",
-      "title": "Заввідділом, Викладач",
+      "title": "Викладач",
       "experience": "",
       "band":"",
       "department":"Теоретичний відділ",
       "instrument":"",
       "phone": "+380934139512",
       "description":"Lorem ipsum dolor sit amet, consectetur",
-      "section": "Management"
+      "section": "Team"
     },
     {
       "url": "https://i.ibb.co/XxjsWyk/women.png",
@@ -652,14 +652,14 @@
     {
       "url": "https://i.ibb.co/XJzn2jm/image.jpg",
       "name": "Тетяна Гайова",
-      "title": "Викладач",
+      "title": "Заввідділом, Викладач",
       "experience": "",
       "band":"",
       "department":"Теоретичний відділ",
-      "instrument":"",
+      "instrument":"Сольфеджіо, музлітература",
       "phone": "+380934139512",
       "description":"Lorem ipsum dolor sit amet, consectetur",
-      "section": "Team"
+      "section": "Management"
     },
     {
       "url": "https://i.ibb.co/XxjsWyk/women.png",
