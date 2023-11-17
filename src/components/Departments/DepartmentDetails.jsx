@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { getDepartmentById } from "../../../api";
-import { ImageTitle } from "../pages/Home.styled";
-import { Container, DecoArrow, DecoWrapper, Description, Title, WrapperDepart } from "./DepartmentDetails.styled";
+import { Container, DecoArrow, DecoWrapper, DepartContainer, Description, ImageTitle, Title, WrapperDepart } from "./DepartmentDetails.styled";
 import { Button } from "../UI/Button/Button.styled";
 
 export const DepartmentDetails = () => {
@@ -27,13 +26,16 @@ const handleGoBack = () => {
     placeholderDiv.style.backgroundColor = 'linear-gradient(to right, #fff5ed 0 90%)';
     e.target.parentNode.insertBefore(placeholderDiv, e.target);
   }}
-/>
-        <Title>
+        />
+        <DepartContainer>
+         <Title>
           {department.name} 
         </Title>
         <Description>
           {department.about}
-      </Description>
+      </Description>  
+        </DepartContainer>
+       
         
       <DecoWrapper>
         <DecoArrow />

@@ -135,15 +135,15 @@ const NavMenu = ({ onFilterChange, data }) => {
 
   const handleSearchClick = () => {
   const filterOptions = {
-    department: selectedDepartment.toLowerCase(),
-    name: inputName.toLowerCase(),
-    title: inputTitle.toLowerCase(),
+    department: selectedDepartment.toLowerCase().trim(),
+    name: inputName.toLowerCase().trim(),
+    title: inputTitle.toLowerCase().trim(),
   };
 
   const filteredCards = originalData.filter((card) => {
     const isDepartmentMatch = filterOptions.department === "виберіть відділ" || card.department.toLowerCase() === filterOptions.department;
-    const isNameMatch = filterOptions.name === "" || card.name.toLowerCase().includes(filterOptions.name);
-    const isPositionMatch = filterOptions.title === "" || card.title.toLowerCase().includes(filterOptions.title);
+    const isNameMatch = filterOptions.name === "" || card.name.toLowerCase().trim().includes(filterOptions.name);
+    const isPositionMatch = filterOptions.title === "" || card.title.toLowerCase().trim().includes(filterOptions.title);
 
     return isDepartmentMatch && isNameMatch && isPositionMatch;
   });

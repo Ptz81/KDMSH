@@ -40,6 +40,7 @@ export const CardList = styled.li`
     margin-right:auto;
   }
   > a img {
+    object-fit: contain;
     margin-top: 10px;
     border: 1px solid var(--border-header);
     width: 100%;

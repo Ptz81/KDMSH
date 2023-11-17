@@ -1,5 +1,6 @@
 import { getDepartments } from "../../../api";
 import { MainSection, MainText } from "../pages/Home.styled";
+import { DepartmentInfo } from "./DepartmentDetails.styled";
 import { DepartmentList } from "./DepartmentList";
 
 export const Departments = () => {
@@ -10,7 +11,7 @@ export const Departments = () => {
       <DepartmentList departments={departments} />    
             <MainText>
       <article>
-      <p>В школі працює 8 відділів, які очолюють висококваліфіковані викладачі:
+      <DepartmentInfo>В школі працює 8 відділів, які очолюють висококваліфіковані викладачі:
 фортепіанний відділ №1 - завідуюча відділом Триліська Н.К., 
 фортепіанний відділ №2 - Козлова Н.О., 
 відділ народних інструментів - Іщук І.В., 
@@ -19,7 +20,7 @@ export const Departments = () => {
 відділ предмету за вибором - Лосєва Е.Л., 
 відділ концертмейстерства та вокалу - Лук'янчук Н.Є., 
 теоретичний відділ - Гайова Т.М.
-</p>
+</DepartmentInfo>
         </article>
       </MainText>
     </MainSection>
