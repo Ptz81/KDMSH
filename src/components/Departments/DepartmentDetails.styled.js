@@ -17,11 +17,14 @@ flex-direction: column;
 export const Title = styled.p`
 
   color: var(--accentColor);
-  font-size: 1.8em;
+  font-size: 1.1em;
   line-height: normal;
   font-weight: 700;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
+    @media screen and (min-width: 778px) {
+  font-size: 1.5em;
+  }
 `;
 export const Description = styled.p`
   font-size: 14px;
@@ -41,7 +44,7 @@ export const WrapperDepart = styled.div`
   display: flex;
   position: relative;
   max-width: auto;
-  max-height: 600px;
+  max-height: auto;
   backdrop-filter: blur(10px);
  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
   border-radius: 10px;
@@ -114,6 +117,18 @@ export const DecoArrow= styled.div`
   font-family: courier, sans;
 `;
 
-export const DepartmentInfo = styled.p`
-font-size: 18px;
+export const DepartmentInfo = styled.div`
+font-size: 14px;
+margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+> ul{
+  font-size: 12px;
+}
+@media screen and (min-width: 778px) {
+  font-size: 20px;
+  > ul{
+  font-size: 16px;
+}
+  }
 `;
