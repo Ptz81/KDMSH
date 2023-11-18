@@ -7,10 +7,10 @@ export const FooterPage = () => {
 
     return (
         <Footer>
-            <>
+
                  <SocialFollow/>
                 <CopyRightSection/>
-            </>
+  
                          
             </Footer>
     )

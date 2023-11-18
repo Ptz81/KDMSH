@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledContaiber = styled.div`
+export const StyledContainer = styled.div`
 margin-right: 14px;
 `
 export const StyledMenuIcon = styled.img`
@@ -8,7 +8,7 @@ export const StyledMenuIcon = styled.img`
   height: 32px;
   cursor: pointer;
   z-index: 999;
-  transition: scale 0.5s ease-out;
+  transition: scale 1s ease-out;
   &:hover,
   &:focus {
     scale: calc(1.05);
@@ -30,7 +30,10 @@ export const StyledMenuWrapper = styled.div`
   width: 100vw;
   height: 100%;
   z-index: 999;
-  overflow: hidden;
+  opacity: hidden;
 
   background-color: #fff5ed;
+/* opacity: ${({ isShowMenu }) => (isShowMenu ? 1 : 1)}; */
+  /* transform: translateY(${({ isShowMenu }) => (isShowMenu ? "0" : "-100%")}); */
+  /* transition: opacity 3s ease-out, transform 0.3s ease-out; */
 `;

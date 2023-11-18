@@ -33,10 +33,16 @@ svg text {
 	stroke: var(--accentColor);
   fill: #fff5ed;
   font-family: 'Marck Script';
-	font-size: 4vw;
+	font-size: 3.5vw;
   text-align: center;
+  @media screen and (min-width: 480px) {
+      font-size:4vw; 
+  }
+  @media screen and (min-width: 778px) {
+      font-size:5vw; 
+  }
   @media screen and (min-width: 1200px) {
-      font-size: 60px; 
+      font-size: 80px; 
   }
 }
 @keyframes stroke {

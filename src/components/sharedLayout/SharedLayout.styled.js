@@ -25,10 +25,13 @@ export const Header = styled.header`
   }
 `;
 export const LogoSpan = styled.span`
-/* margin-left: 3px; */
+font-size:0px;
 font-family: 'Marck Script', cursive;
 line-height: 1.5em;
 color: var(--semiAccentColor);
+@media screen and (min-width: 480px) {
+      font-size:12px; 
+  }
 &:hover{
   color: var(--accentColor);
 }

@@ -9,8 +9,11 @@ border-radius: 15px;
 `
 export const DepartContainer = styled.div`
 display: flex;
-margin-left: 20px;
+margin-left: 10px;
 flex-direction: column;
+@media screen and (min-width: 778px) {
+  margin-left: 20px;
+  }
 
 `
 
@@ -83,7 +86,7 @@ export const WrapperDepart = styled.div`
   transform: scale(28);
 }
 &:hover .Description{
-    transition: all 0.5s ease-out;
+    transition: all 0.8s ease-out;
   color: rgba(255, 255, 255, 0.8);
 }
 &:hover .Title{
@@ -121,14 +124,29 @@ export const DepartmentInfo = styled.div`
 font-size: 14px;
 margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 280px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 > ul{
   font-size: 12px;
 }
+@media screen and (min-width: 360px) {
+  width: auto;
+  }
+
 @media screen and (min-width: 778px) {
   font-size: 20px;
+  padding: 20px;
   > ul{
   font-size: 16px;
 }
   }
+  @media screen and (min-width: 1050px) {
+  width: 970px;
+  }
 `;
+
+export const ArticleWrapper = styled.article`
+width: 100%;
+`

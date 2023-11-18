@@ -16,6 +16,9 @@ export const Footer = styled.footer`
   padding: 0 2px;
   height: auto;
   backdrop-filter: blur(5px);
+  @media screen and (max-width: 400px) {
+      flex-direction: column;
+  }
 `;
 
 export const CopyRight = styled.div`

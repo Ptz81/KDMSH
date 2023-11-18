@@ -77,7 +77,8 @@ export const DepartmentName = styled.p`
     line-height: 1.2;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    padding: 10px;
+    /* margin-top: 2%;
+    margin-bottom: 2%; */
     /* height: 60px; */
 `;

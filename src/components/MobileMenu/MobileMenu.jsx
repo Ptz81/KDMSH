@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navigation from '../Navigation/Navigation.jsx';
 import { mobileMenu, xCross } from '../Images/index.js';
 import {
-  StyledContaiber,
+  StyledContainer,
   StyledMenuIcon,
   StyledMenuWrapper,
 } from './MobileMenu.styled.js';
@@ -23,7 +23,7 @@ const MenuForMobile = () => {
   };
 
   return (
-    <StyledContaiber>
+    <StyledContainer>
       {!isShowMenu ? (
         <StyledMenuIcon
           onClick={handleMenuOpen}
@@ -42,7 +42,7 @@ const MenuForMobile = () => {
           <Navigation closeMobileMenu={handleMenuClose} />
         </StyledMenuWrapper>
       ) : null}
-    </StyledContaiber>
+    </StyledContainer>
   );
 };
 

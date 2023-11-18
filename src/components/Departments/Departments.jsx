@@ -1,6 +1,6 @@
 import { getDepartments } from "../../../api";
 import { MainSection, MainText } from "../pages/Home.styled";
-import { DepartmentInfo } from "./DepartmentDetails.styled";
+import { ArticleWrapper, DepartmentInfo } from "./DepartmentDetails.styled";
 import { DepartmentList } from "./DepartmentList";
 
 export const Departments = () => {
@@ -10,7 +10,7 @@ export const Departments = () => {
 
       <DepartmentList departments={departments} />    
             <MainText>
-      <article>
+      <ArticleWrapper>
           <DepartmentInfo>В школі працює 8 відділів, які очолюють висококваліфіковані викладачі:
             <ul>
               <li>
@@ -39,7 +39,7 @@ export const Departments = () => {
               </li>
             </ul>
 </DepartmentInfo>
-        </article>
+        </ArticleWrapper>
       </MainText>
     </MainSection>
   );

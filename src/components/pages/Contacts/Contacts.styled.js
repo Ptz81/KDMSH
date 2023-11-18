@@ -56,7 +56,7 @@ padding: 20px;
 font-size: 14px;
 border-radius: 10px;
 box-sizing: border-box;
-width: 100%;
+width: 300px;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 ul{
@@ -64,7 +64,7 @@ ul{
 }
 
 @media screen and (min-width: 558px) {
-    width: 500px;
+    width: 400px;
     ul{
   width: 400px;
 }
