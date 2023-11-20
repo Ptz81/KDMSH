@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const DownloadContainer = styled.div`
-  margin: 20px;
+  /* margin: 20px; */
 `;
 
 const DownloadButton = styled.a`
