@@ -125,8 +125,23 @@ font-size: 16px;
 `;
 
 export const FormText = styled.div`
-margin-top: 40px;
+margin-top: 30px;
 margin-bottom: 10px;
+`
+export const FileContainer = styled.div`
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center;
+gap: 10px;
+@media screen and (min-width: 778px) {
+flex-direction: row;
+width: auto;
+  }
 `
 export const FormList = styled.ul`
 margin-bottom: 20px;
