@@ -1229,16 +1229,16 @@ svg text {
 	stroke: var(--accentColor);
   fill: #fff5ed;
   font-family: 'Marck Script';
-	font-size: 3.5vw;
+	font-size: 3vw;
   text-align: center;
   @media screen and (min-width: 480px) {
-      font-size:4vw; 
+      font-size:3.5vw; 
   }
   @media screen and (min-width: 778px) {
       font-size:5vw; 
   }
   @media screen and (min-width: 1200px) {
-      font-size: 80px; 
+      font-size: 65px; 
   }
 }
 @keyframes stroke {
@@ -1478,8 +1478,8 @@ flex-wrap: wrap;
 `,A3=F.button`
   color: var(--mainColor);
   text-align: center;
-  font-family: Manrope;
-  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -1493,17 +1493,27 @@ flex-wrap: wrap;
   justify-content: center;
   border-radius: 100px;
   cursor: pointer;
+  @media screen and (min-width: 778px) {
+font-size: 20px;
+  }
 `,R3=F.p`
   // position: absolute;
   // z-index: 2;
-`,I3=F.div`
+`,I3=F.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  >li{
+  gap: 10px;
+  > li{
     list-style: none;
+    > a{
+      text-decoration: none;
+    }
   }
+  /* @media screen and (min-width: 778px) {
+gap: 24px;
+  } */
+  
 `;F.button`
   display: flex;
   align-items: center;
@@ -1539,14 +1549,14 @@ flex-wrap: wrap;
   } */
 `,U3=F.div`
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-   /* @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
  top: 15px;
   right: 15px;
-  } */
-`,_1=({isOpen:e,closeModal:t,children:n})=>{const r=o=>{o.stopPropagation()},i=o=>{o.target===o.currentTarget&&t()};return C.useEffect(()=>{e?(document.body.style.overflow="auto",document.documentElement.style.overflow="auto"):(document.body.style.overflow="scroll",document.documentElement.style.overflow="scroll")},[e]),c.jsx(c.Fragment,{children:e&&c.jsx(F3,{onClick:i,children:c.jsxs(D3,{className:"ModalContent",onClick:r,children:[c.jsx(U3,{onClick:t,children:c.jsx(M3,{size:18})}),n]})})})};_1.propTypes={isOpen:T.bool.isRequired,closeModal:T.func.isRequired,children:T.node};const W3=F.div`
+  }
+`,_1=({isOpen:e,closeModal:t,children:n})=>{const r=o=>{o.stopPropagation()},i=o=>{o.target===o.currentTarget&&t()};return C.useEffect(()=>{e?(document.body.style.overflow="auto",document.documentElement.style.overflow="auto"):(document.body.style.overflow="scroll",document.documentElement.style.overflow="scroll")},[e]),c.jsx(c.Fragment,{children:e&&c.jsx(F3,{onClick:i,children:c.jsxs(D3,{className:"ModalContent",onClick:r,children:[c.jsx(U3,{onClick:t,children:c.jsx(M3,{size:20})}),n]})})})};_1.propTypes={isOpen:T.bool.isRequired,closeModal:T.func.isRequired,children:T.node};const W3=F.div`
 font-size: inherit;
 @media screen and (min-width: 778px) {
 /* margin-bottom:20px;
@@ -1556,14 +1566,14 @@ margin-top:20px */
 width: 100%;
 box-sizing: border-box;
 border-radius: 20px;
-padding: 10px 20px;
+padding: 5px;
  /* padding: 5px 10px; */
  text-align: center;
 
 @media screen and (min-width: 778px) {
     margin-left: auto;
     margin-right: auto;
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
     /* box-sizing: border-box; */
   }
 `,B3=F.img`
@@ -1642,7 +1652,7 @@ font-size: 18px;
 
 `;const K3=F.p`
 /* font-size: 14px; */
-`,L1=({name:e,title:t,img:n,instrument:r,band:i,department:o})=>c.jsxs(W3,{children:[c.jsx(N1,{children:n?c.jsx(B3,{src:n,alt:`photo of ${e}`}):c.jsx(V3,{viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",children:c.jsx("path",{d:"M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"})})}),c.jsxs(H3,{children:[c.jsx(Y3,{children:e}),c.jsx(X3,{children:t}),c.jsx(G3,{children:o}),c.jsxs(K3,{children:[c.jsx(_p,{children:"Інструмент:"}),r]}),c.jsxs(Q3,{children:[c.jsx(_p,{children:"Колективи:"}),i]})]})]});L1.propTypes={id:T.number,name:T.string,title:T.string,phone:T.string,img:T.string,description:T.string,instrument:T.string,band:T.string,department:T.string};const O1=({data:e})=>{const[t,n]=C.useState(!1),[r,i]=C.useState(null),o=s=>{i(s),n(!t)},a=s=>{la.current&&!la.current.contains(s.target)&&n(!1)};return C.useEffect(()=>{const s=l=>{l.key==="Escape"&&t&&n(!1)};return document.addEventListener("keydown",s),document.addEventListener("click",a),()=>{document.removeEventListener("keydown",s),document.removeEventListener("click",a)}},[t]),c.jsxs(la,{children:[e.map((s,l)=>c.jsxs(cf,{children:[s.url?c.jsx(N3,{src:s.url,alt:`photo of ${s.name}`}):c.jsx(P1,{viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",children:c.jsx("path",{d:"M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"})}),c.jsxs(j3,{children:[c.jsx(T3,{children:s.name}),c.jsx(P3,{children:s.title}),c.jsx(_3,{onClick:()=>o(s),children:"Детальніше"})]})]},l)),t&&r&&c.jsx(_1,{isOpen:t,closeModal:()=>n(!1),children:c.jsx(L1,{name:r.name,title:r.title,description:r.description,phone:r.phone,img:r.url,instrument:r.instrument,band:r.band,department:r.department})})]})};O1.propTypes={data:T.array.isRequired};function q3(e,t){let n;return function(...i){const o=()=>{n=null,e(...i)};clearTimeout(n),n=setTimeout(o,t)}()}const z1=({data:e})=>{const[t,n]=C.useState(15),[r,i]=C.useState(1),o=()=>{window.innerWidth>778?n(15):n(6)};C.useEffect(()=>{const s=q3(o,200);return o(),window.addEventListener("resize",s),()=>{window.removeEventListener("resize",s)}},[]);const a=s=>{i(s)};return c.jsxs(S1,{children:[c.jsx(z3,{children:c.jsx(O1,{data:e.slice((r-1)*t,r*t)})}),c.jsx($3,{children:c.jsx(T1,{currentPage:r,totalPages:Math.ceil(e.length/t),onChangePage:a,pageType:"team"})})]})};z1.propTypes={data:T.array.isRequired};const Z3=P.div`
+`,L1=({name:e,title:t,img:n,instrument:r,band:i,department:o})=>c.jsxs(W3,{children:[c.jsx(N1,{children:n?c.jsx(B3,{src:n,alt:`photo of ${e}`}):c.jsx(V3,{viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",children:c.jsx("path",{d:"M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"})})}),c.jsxs(H3,{children:[c.jsx(Y3,{children:e}),c.jsx(X3,{children:t}),c.jsx(G3,{children:o}),c.jsxs(K3,{children:[c.jsx(_p,{children:"Інструмент:"}),r]}),c.jsxs(Q3,{children:[c.jsx(_p,{children:"Колективи:"}),i]})]})]});L1.propTypes={id:T.number,name:T.string,title:T.string,phone:T.string,img:T.string,description:T.string,instrument:T.string,band:T.string,department:T.string};const O1=({data:e})=>{const[t,n]=C.useState(!1),[r,i]=C.useState(null),o=s=>{i(s),n(!t)},a=s=>{la.current&&!la.current.contains(s.target)&&n(!1)};return C.useEffect(()=>{const s=l=>{l.key==="Escape"&&t&&n(!1)};return document.addEventListener("keydown",s),document.addEventListener("click",a),()=>{document.removeEventListener("keydown",s),document.removeEventListener("click",a)}},[t]),c.jsxs(la,{children:[e.map((s,l)=>c.jsxs(cf,{children:[s.url?c.jsx(N3,{src:s.url,alt:`photo of ${s.name}`}):c.jsx(P1,{viewBox:"0 0 24 24",xmlns:"http://www.w3.org/2000/svg",children:c.jsx("path",{d:"M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"})}),c.jsxs(j3,{children:[c.jsx(T3,{children:s.name}),c.jsx(P3,{children:s.title}),c.jsx(_3,{onClick:()=>o(s),children:"Детальніше"})]})]},l)),t&&r&&c.jsx(_1,{isOpen:t,closeModal:()=>n(!1),children:c.jsx(L1,{name:r.name,title:r.title,description:r.description,phone:r.phone,img:r.url,instrument:r.instrument,band:r.band,department:r.department})})]})};O1.propTypes={data:T.array.isRequired};function q3(e,t){let n;return function(...i){const o=()=>{n=null,e(...i)};clearTimeout(n),n=setTimeout(o,t)}()}const z1=({data:e})=>{const[t,n]=C.useState(15),[r,i]=C.useState(1),o=()=>{window.innerWidth>778?n(15):n(10)};C.useEffect(()=>{const s=q3(o,200);return o(),window.addEventListener("resize",s),()=>{window.removeEventListener("resize",s)}},[]);const a=s=>{i(s)};return c.jsxs(S1,{children:[c.jsx(z3,{children:c.jsx(O1,{data:e.slice((r-1)*t,r*t)})}),c.jsx($3,{children:c.jsx(T1,{currentPage:r,totalPages:Math.ceil(e.length/t),onChangePage:a,pageType:"team"})})]})};z1.propTypes={data:T.array.isRequired};const Z3=P.div`
 position: relative;
 width: 100%;
 @media only screen and (min-width: 1200px) {  
