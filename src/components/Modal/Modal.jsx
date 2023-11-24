@@ -35,13 +35,13 @@ const ModalContent = styled.div`
 
 const CloseButton = styled.div`
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-   /* @media screen and (min-width: 768px) {
+   @media screen and (min-width: 768px) {
  top: 15px;
   right: 15px;
-  } */
+  }
 `;
 
 const Modal = ({ isOpen, closeModal, children}) => {
@@ -70,7 +70,7 @@ const Modal = ({ isOpen, closeModal, children}) => {
         <ModalOverlay onClick={handleBackdropClick}>
           <ModalContent className="ModalContent" onClick={handleModalClick}>
             <CloseButton onClick={closeModal}>
-              <FaTimes size={18} />
+              <FaTimes size={20} />
             </CloseButton>
             {children}
           </ModalContent>

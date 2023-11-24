@@ -25,7 +25,7 @@ const CardList = ({ data }) => {
     if (window.innerWidth > 778) {
       setContentPerPage(15);
     } else {
-      setContentPerPage(6);
+      setContentPerPage(10);
     }
   };
 

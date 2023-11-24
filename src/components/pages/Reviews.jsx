@@ -5,6 +5,7 @@ import file1 from '../../assets/files/Заява на вступ КДМШ №22.
 import file2 from '../../assets/files/Заява на пільги КДМШ№22.pdf'
 import file3 from '../../assets/files/Заява КДМШ про перебіг воєнних дій.pdf'
 import FileDownLoader from "../FileDownLoader/FileDownLoader";
+// import Question from "../Question/Question";
 
 export const Reviews = () => {
   return (
@@ -59,6 +60,10 @@ export const Reviews = () => {
         {/* <CommentText>
           * Заява встановленого зразка заповнюється на місці.
         </CommentText> */}
+        {/* <>
+         <Question question="Як ви визначаєте ваше запитання?" answer="Ваша відповідь тут." />
+      <Question question="Що робить цей компонент?" answer="Це компонент React для відповідей на запитання." />
+        </> */}
        
         <CommentText>
             *Для здобувачів, що навчаються на пільговій основі, передбачен інший пакет документів.

@@ -44,9 +44,10 @@ const ButtonPagination = ({
           }}
         />
       </ButtonArrow>
-      {[...Array(totalPages).keys()].map(el => (
+      <ul>
+         {[...Array(totalPages).keys()].map(el => (
         <li key={el}>
-          <Link to={`/${pageType}/${el + 1}`}>
+          <Link style={{textDecoration:'none'}} to={`/${pageType}/${el + 1}`}>
             <Btn
               onClick={() => setPage(el + 1)}
               active={`${page === el + 1 ? 'active' : ''}`}
@@ -56,6 +57,8 @@ const ButtonPagination = ({
           </Link>
         </li>
       ))}
+      </ul>
+     
       <ButtonArrow onClick={nextPage}>
         <FaArrowRight
           style={{

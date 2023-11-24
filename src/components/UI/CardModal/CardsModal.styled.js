@@ -11,14 +11,14 @@ export const ContainerCard= styled.div`
 width: 100%;
 box-sizing: border-box;
 border-radius: 20px;
-padding: 10px 20px;
+padding: 5px;
  /* padding: 5px 10px; */
  text-align: center;
 
 @media screen and (min-width: 778px) {
     margin-left: auto;
     margin-right: auto;
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
     /* box-sizing: border-box; */
   }
 `

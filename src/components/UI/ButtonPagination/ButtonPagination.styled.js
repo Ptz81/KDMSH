@@ -4,8 +4,8 @@ import styled from '@emotion/styled';
 export const Btn = styled.button`
   color: var(--mainColor);
   text-align: center;
-  font-family: Manrope;
-  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -20,20 +20,30 @@ export const Btn = styled.button`
   justify-content: center;
   border-radius: 100px;
   cursor: pointer;
+  @media screen and (min-width: 778px) {
+font-size: 20px;
+  }
 `;
 export const Number = styled.p`
   // position: absolute;
   // z-index: 2;
 `;
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  >li{
+  gap: 10px;
+  > li{
     list-style: none;
+    > a{
+      text-decoration: none;
+    }
   }
+  /* @media screen and (min-width: 778px) {
+gap: 24px;
+  } */
+  
 `;
 
 export const ButtonArrow = styled.button`
